@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViviCeramics — Halloween ceramics & hyper-real pumpkins</title>
+    <meta
+      name="description"
+      content="ViviCeramics crafts hand-finished Halloween ceramics. Signature hyper-real ceramic pumpkins for Europe, North America & Southeast Asia."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="intro-screen" id="intro-screen" aria-hidden="true">
+      <div class="intro-moon" aria-hidden="true"></div>
+      <div class="intro-bats" aria-hidden="true">
+        <div class="bat">
+          <svg viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="32" cy="20" rx="6" ry="5" fill="#1a0a14" />
+            <path class="bat-wing" d="M26 20 Q10 6 2 18 Q12 22 26 20" />
+            <path class="bat-wing" d="M38 20 Q54 6 62 18 Q52 22 38 20" />
+          </svg>
+        </div>
+        <div class="bat">
+          <svg viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="32" cy="20" rx="5" ry="4" fill="#1a0a14" />
+            <path class="bat-wing" d="M27 20 Q8 4 0 20 Q14 24 27 20" />
+            <path class="bat-wing" d="M37 20 Q56 4 64 20 Q50 24 37 20" />
+          </svg>
+        </div>
+        <div class="bat">
+          <svg viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="32" cy="20" rx="7" ry="5" fill="#1a0a14" />
+            <path class="bat-wing" d="M25 20 Q6 10 0 24 Q16 26 25 20" />
+            <path class="bat-wing" d="M39 20 Q58 10 64 24 Q48 26 39 20" />
+          </svg>
+        </div>
+        <div class="bat">
+          <svg viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="32" cy="20" rx="5" ry="4" fill="#1a0a14" />
+            <path class="bat-wing" d="M27 20 Q12 8 4 22 Q18 25 27 20" />
+            <path class="bat-wing" d="M37 20 Q52 8 60 22 Q46 25 37 20" />
+          </svg>
+        </div>
+        <div class="bat">
+          <svg viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="32" cy="20" rx="6" ry="4" fill="#1a0a14" />
+            <path class="bat-wing" d="M26 20 Q7 6 0 22 Q15 26 26 20" />
+            <path class="bat-wing" d="M38 20 Q57 6 64 22 Q49 26 38 20" />
+          </svg>
+        </div>
+      </div>
+      <div class="intro-center">
+        <div class="intro-pumpkin-wrap">
+          <div class="intro-pumpkin" aria-hidden="true"></div>
+        </div>
+        <h1 class="intro-brand">ViviCeramics</h1>
+        <p class="intro-tag">Halloween ceramics</p>
+        <button type="button" class="intro-skip" id="intro-skip">Enter the shop</button>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo-link" href="index.html" aria-label="ViviCeramics home">
+          <span class="logo-mark" aria-hidden="true"></span>
+          ViviCeramics
+        </a>
+        <nav class="nav-main" aria-label="Primary">
+          <a href="products.html" data-i18n="navProducts">All Product</a>
+          <a href="resources.html" data-i18n="navResources">Resources</a>
+          <a href="about.html" data-i18n="navAbout">About us</a>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="icon-btn lang-btn" id="lang-toggle" aria-label="Switch language">EN</button>
+          <a href="products.html" class="icon-btn" aria-label="Cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+              <path d="M6 8h15l-1.5 9H7.5L6 8zm0 0L5 3H2" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="9" cy="20" r="1.5" fill="currentColor" stroke="none" />
+              <circle cx="18" cy="20" r="1.5" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+          <a href="login.html" class="icon-btn" aria-label="Account">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.5" />
+              <path d="M5 20v-1c0-3 2.5-5.5 7-5.5s7 2.5 7 5.5v1" stroke-linecap="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-bg-layer" aria-hidden="true"></div>
+        <div class="hero-mist" aria-hidden="true"></div>
+        <div id="hero-3d" aria-hidden="true"></div>
+        <div class="hero-fog" aria-hidden="true"></div>
+        <div class="hero-moon" aria-hidden="true"></div>
+        <div class="hero-bats" aria-hidden="true">
+          <div class="bat">
+            <svg viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="32" cy="20" rx="6" ry="5" fill="#1a0a14" />
+              <path class="bat-wing" d="M26 20 Q10 6 2 18 Q12 22 26 20" />
+              <path class="bat-wing" d="M38 20 Q54 6 62 18 Q52 22 38 20" />
+            </svg>
+          </div>
+          <div class="bat">
+            <svg viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="32" cy="20" rx="5" ry="4" fill="#1a0a14" />
+              <path class="bat-wing" d="M27 20 Q8 4 0 20 Q14 24 27 20" />
+              <path class="bat-wing" d="M37 20 Q56 4 64 20 Q50 24 37 20" />
+            </svg>
+          </div>
+          <div class="bat">
+            <svg viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="32" cy="20" rx="7" ry="5" fill="#1a0a14" />
+              <path class="bat-wing" d="M25 20 Q6 10 0 24 Q16 26 25 20" />
+              <path class="bat-wing" d="M39 20 Q58 10 64 24 Q48 26 39 20" />
+            </svg>
+          </div>
+          <div class="bat">
+            <svg viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="32" cy="20" rx="5" ry="4" fill="#1a0a14" />
+              <path class="bat-wing" d="M27 20 Q12 8 4 22 Q18 25 27 20" />
+              <path class="bat-wing" d="M37 20 Q52 8 60 22 Q46 25 37 20" />
+            </svg>
+          </div>
+          <div class="bat">
+            <svg viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="32" cy="20" rx="6" ry="4" fill="#1a0a14" />
+              <path class="bat-wing" d="M26 20 Q7 6 0 22 Q15 26 26 20" />
+              <path class="bat-wing" d="M38 20 Q57 6 64 22 Q49 26 38 20" />
+            </svg>
+          </div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-copy">
+            <p class="hero-eyebrow" data-i18n="heroEyebrow">Hand-fired · Limited autumn runs</p>
+            <h1 class="hero-title">
+              <span data-i18n="heroTitleBefore">Ceramic pumpkins, </span><span class="hero-title-accent" data-i18n="heroTitleAccent">uncannily real.</span>
+            </h1>
+            <p class="hero-slogan" data-i18n="heroSlogan">
+              Hand-finished stoneware pumpkins that read like harvest—until the light catches the glaze and the room goes quiet.
+            </p>
+            <div class="hero-cta-row">
+              <a class="btn-primary" href="products.html" data-i18n="heroShop">Shop the drop</a>
+              <a class="btn-ghost" href="about.html" data-i18n="heroStory">Our craft</a>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-hint">
+          <div class="scroll-hint-inner">
+            <span data-i18n="scrollHint">Descend</span>
+            <span class="scroll-hint-line" aria-hidden="true"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-products" aria-labelledby="products-heading">
+        <h2 id="products-heading" class="visually-hidden">Featured products</h2>
+        <article class="product-card" data-reveal-delay="0">
+          <div class="product-visual">
+            <span class="product-badge" data-i18n="p1Badge">Signature</span>
+            <img
+              class="product-placeholder"
+              src="https://images.unsplash.com/photo-1509557965877-b88c97052f0e?w=800&q=80"
+              alt="Warm autumn pumpkins and decor on a surface"
+              width="800"
+              height="600"
+              loading="lazy"
+            />
+          </div>
+          <div class="product-body">
+            <h2 data-i18n="p1Title">The pumpkin everyone mistakes for the real thing.</h2>
+            <p data-i18n="p1Body">
+              Sculpted in small batches and fired for depth, each piece carries uneven ribs, a believable stem, and a satin-matte skin that feels almost warm to the touch.
+            </p>
+            <a class="product-link" href="products.html" data-i18n="p1Link">View collection →</a>
+          </div>
+        </article>
+
+        <article class="product-card product-card--reverse" data-reveal-delay="120">
+          <div class="product-visual">
+            <span class="product-badge" data-i18n="p2Badge">Set piece</span>
+            <img
+              class="product-placeholder"
+              src="https://images.unsplash.com/photo-1606312619070-d48b4c652a48?w=800&q=80"
+              alt="Cozy candlelight and seasonal table setting"
+              width="800"
+              height="600"
+              loading="lazy"
+            />
+          </div>
+          <div class="product-body">
+            <h2 data-i18n="p2Title">A trio of minis—or a candle throne—for the vignette.</h2>
+            <p data-i18n="p2Body">
+              Three petite pumpkins nest together like a whispered spell, or choose the taper holder: a low, moody pedestal that catches wax drips like ritual evidence.
+            </p>
+            <a class="product-link" href="products.html" data-i18n="p2Link">Explore sets →</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-reviews" aria-labelledby="reviews-title">
+        <div class="reviews-inner">
+          <h2 id="reviews-title" class="section-title" data-i18n="reviewsTitle">Whispers from the patch</h2>
+          <p class="section-sub" data-i18n="reviewsSub">Real rooms. Real light. Unreal ceramics.</p>
+          <div class="review-grid">
+            <article class="review-card" data-reveal-delay="0">
+              <button type="button" class="review-photo" data-lightbox data-full="https://images.unsplash.com/photo-1513475382583-d06e58bcb0e0?w=1400&q=85" aria-label="Enlarge customer photo 1">
+                <img src="https://images.unsplash.com/photo-1513475382583-d06e58bcb0e0?w=900&q=80" alt="Interior with warm lighting and decor" width="900" height="619" loading="lazy" />
+              </button>
+              <div class="review-head">
+                <img class="review-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&q=80" alt="" width="44" height="44" />
+                <div class="review-meta">
+                  <strong>Elena</strong>
+                  <span>Barcelona</span>
+                </div>
+              </div>
+              <p class="review-text" data-i18n="r1">
+                “The weight, the glaze, the stem—I actually tapped it expecting hollow plastic. It’s the most convincing piece I own.”
+              </p>
+            </article>
+            <article class="review-card" data-reveal-delay="100">
+              <button type="button" class="review-photo" data-lightbox data-full="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1400&q=85" aria-label="Enlarge customer photo 2">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900&q=80" alt="Living room with curated furniture" width="900" height="600" loading="lazy" />
+              </button>
+              <div class="review-head">
+                <img class="review-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&q=80" alt="" width="44" height="44" />
+                <div class="review-meta">
+                  <strong>Marcus</strong>
+                  <span>Chicago</span>
+                </div>
+              </div>
+              <p class="review-text" data-i18n="r2">
+                “Reads premium in person. My living room went from ‘decorated’ to ‘curated’ in one object.”
+              </p>
+            </article>
+            <article class="review-card" data-reveal-delay="200">
+              <button type="button" class="review-photo" data-lightbox data-full="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=1400&q=85" aria-label="Enlarge customer photo 3">
+                <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=900&q=80" alt="Soft lamp light in a cozy interior" width="900" height="600" loading="lazy" />
+              </button>
+              <div class="review-head">
+                <img class="review-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&q=80" alt="" width="44" height="44" />
+                <div class="review-meta">
+                  <strong>Priya</strong>
+                  <span>Singapore</span>
+                </div>
+              </div>
+              <p class="review-text" data-i18n="r3">
+                “Subtle spooky, not cartoon. It photographs like sculpture and still feels cozy when the lights go low.”
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta" aria-labelledby="cta-title">
+        <div class="cta-panel">
+          <h2 id="cta-title" data-i18n="ctaTitle">Your collection, remembered.</h2>
+          <p data-i18n="ctaSub">Save pieces you love, track orders, and unlock early access to limited autumn drops.</p>
+          <a class="btn-primary" href="login.html" data-i18n="ctaBtn">Sign in to your account</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer">© ViviCeramics. All hallows reserved.</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+      <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close">×</button>
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+
+    <style>
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
+    <script src="js/main.js"></script>
+  </body>
+</html>

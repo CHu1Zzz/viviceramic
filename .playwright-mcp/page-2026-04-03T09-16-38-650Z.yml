@@ -1,0 +1,104 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - button [ref=e5]:
+        - img [ref=e7]
+      - button "File" [ref=e9]
+      - button "View" [ref=e10]
+      - button "Tools" [ref=e11]
+      - button "Packages" [ref=e12]
+      - button "Help" [ref=e13]
+    - generic "D:\\viviceramic\\my-video" [ref=e14]:
+      - generic "Open in C:Windows otepad.exe" [ref=e15] [cursor=pointer]: my-video
+      - generic [ref=e16]: /
+      - generic "pumpkin-rotation" [ref=e17]
+    - generic [ref=e18]:
+      - button [ref=e19]:
+        - generic "Toggle Left Sidebar (Ctrl+B)" [ref=e20]
+      - button [ref=e22]:
+        - generic "Toggle Right Sidebar (Ctrl+J)" [ref=e23]
+  - generic [ref=e25]:
+    - generic [ref=e27]:
+      - generic [ref=e29]:
+        - generic [ref=e31]:
+          - generic [ref=e33]:
+            - button "Compositions" [ref=e34]
+            - button "Assets" [ref=e35]
+          - generic [ref=e36]:
+            - generic [ref=e39]:
+              - generic [ref=e40]: pumpkin-rotation
+              - generic [ref=e41]: 1080x1920, 30 FPS
+              - generic [ref=e42]: Duration 00:05.00
+            - button "Search... Ctrl+K" [ref=e44] [cursor=pointer]:
+              - text: Search...
+              - generic [ref=e45]: Ctrl+K
+            - generic [ref=e46]:
+              - generic "history-of-venus" [ref=e49]:
+                - img [ref=e50]
+                - generic [ref=e52]: history-of-venus
+              - generic "pumpkin-rotation" [ref=e55]:
+                - img [ref=e56]
+                - generic [ref=e58]: pumpkin-rotation
+        - img [ref=e83]
+      - generic [ref=e84]:
+        - generic [ref=e86]:
+          - button "Zoom out timeline" [disabled] [ref=e87]:
+            - img [ref=e88]
+          - slider "Timeline zoom (1x)" [ref=e90]: "1"
+          - button "Zoom in timeline" [ref=e91]:
+            - img [ref=e92]
+        - generic "Preview Size" [ref=e94]:
+          - button "Fit" [ref=e95]:
+            - generic "Fit" [ref=e96]
+            - img [ref=e97]
+        - generic "Change the playback rate" [ref=e99]:
+          - button "1x" [ref=e100]:
+            - generic "1x" [ref=e101]
+            - img [ref=e102]
+        - button "Jump to beginning" [disabled] [ref=e104]:
+          - img [ref=e105]
+        - button "Step back one frame" [disabled] [ref=e107]:
+          - img [ref=e108]
+        - button "Play" [ref=e110]:
+          - img [ref=e111]
+        - button "Step forward one frame" [ref=e113]:
+          - img [ref=e114]
+        - button "Loop video" [ref=e116]:
+          - img [ref=e117]
+        - button "Mute video" [ref=e119]:
+          - img [ref=e120]
+        - button "Mark In (I) - right click to clear" [disabled] [ref=e122]:
+          - img [ref=e123]
+        - button "Mark Out (O) - right click to clear" [ref=e125]:
+          - img [ref=e126]
+        - button "Show transparency as checkerboard (T)" [ref=e128]:
+          - img [ref=e129]
+        - button "Enter fullscreen preview (F)" [ref=e131]:
+          - img [ref=e132]
+        - generic "Export the current composition (R)" [ref=e135] [cursor=pointer]:
+          - button "Render" [ref=e136]:
+            - generic [ref=e137]:
+              - img [ref=e138]
+              - generic [ref=e140]: Render
+    - generic [ref=e145]:
+      - generic [ref=e150]:
+        - generic [ref=e151]:
+          - img
+        - generic "ccv2%2F2026-04-03%2FMiniMax-M2.7%2F2029397524166480799%2F06543d86db3f2874175f3798540762fa98c3944d132d3851ea009d5795eefaa1..png?Expires=1775285918&OSSAccessKeyId=LTAI5tGLnRTkBjLuYPjNcKQ8&Signature=v0XsYDOGFCIxmcVrVWgD%2ByWbDGQ%3D" [ref=e152]
+      - generic [ref=e154]:
+        - generic [ref=e155]: 00:00.00
+        - button "0" [ref=e156]
+      - generic [ref=e160]:
+        - generic "ccv2%2F2026-04-03%2FMiniMax-M2.7%2F2029397524166480799%2F06543d86db3f2874175f3798540762fa98c3944d132d3851ea009d5795eefaa1..png?Expires=1775285918&OSSAccessKeyId=LTAI5tGLnRTkBjLuYPjNcKQ8&Signature=v0XsYDOGFCIxmcVrVWgD%2ByWbDGQ%3D" [ref=e166]
+        - generic:
+          - generic:
+            - generic: 00:01.00
+          - generic:
+            - generic: 00:02.00
+          - generic:
+            - generic: 00:03.00
+          - generic:
+            - generic: 00:04.00
+        - generic:
+          - generic:
+            - img

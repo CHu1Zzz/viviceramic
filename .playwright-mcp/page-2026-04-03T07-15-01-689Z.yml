@@ -1,0 +1,102 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "ViviCeramics home" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - text: ViviCeramics
+      - navigation "Primary" [ref=e6]:
+        - link "All Product" [ref=e7] [cursor=pointer]:
+          - /url: products.html
+        - link "Resources" [ref=e8] [cursor=pointer]:
+          - /url: resources.html
+        - link "About us" [ref=e9] [cursor=pointer]:
+          - /url: about.html
+      - generic [ref=e10]:
+        - button "Switch language" [ref=e11] [cursor=pointer]: EN
+        - link "Cart" [ref=e12] [cursor=pointer]:
+          - /url: products.html
+          - img [ref=e13]
+        - link "Account" [ref=e17] [cursor=pointer]:
+          - /url: login.html
+          - img [ref=e18]
+  - main [ref=e21]:
+    - generic [ref=e22]:
+      - img [ref=e25]
+      - generic:
+        - generic:
+          - img
+        - generic:
+          - img
+        - generic:
+          - img
+        - generic:
+          - img
+        - generic:
+          - img
+      - generic [ref=e27]:
+        - paragraph [ref=e28]: Hand-fired · Limited autumn runs
+        - heading "Ceramic pumpkins, uncannily real." [level=1] [ref=e29]
+        - paragraph [ref=e30]: Hand-finished stoneware pumpkins that read like harvest—until the light catches the glaze and the room goes quiet.
+        - generic [ref=e31]:
+          - link "Shop the drop" [ref=e32] [cursor=pointer]:
+            - /url: products.html
+          - link "Our craft" [ref=e33] [cursor=pointer]:
+            - /url: about.html
+      - generic [ref=e36]: Descend
+    - region "Featured products" [ref=e38]:
+      - heading "Featured products" [level=2] [ref=e39]
+      - article [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e42]: Signature
+          - img "Warm autumn pumpkins and decor on a surface" [ref=e43]
+        - generic [ref=e44]:
+          - heading "The pumpkin everyone mistakes for the real thing." [level=2] [ref=e45]
+          - paragraph [ref=e46]: Sculpted in small batches and fired for depth, each piece carries uneven ribs, a believable stem, and a satin-matte skin that feels almost warm to the touch. Place one on the mantle and watch guests lean in closer.
+          - link "View collection →" [ref=e47] [cursor=pointer]:
+            - /url: products.html
+      - article [ref=e48]:
+        - generic [ref=e49]:
+          - generic [ref=e50]: Set piece
+          - img "Cozy candlelight and seasonal table setting" [ref=e51]
+        - generic [ref=e52]:
+          - heading "A trio of minis—or a candle throne—for the vignette." [level=2] [ref=e53]
+          - paragraph [ref=e54]: "Three petite pumpkins nest together like a whispered spell, or choose the taper holder: a low, moody pedestal that catches wax drips like ritual evidence. Designed to pair with taller stems and the slow flicker of flame."
+          - link "Explore sets →" [ref=e55] [cursor=pointer]:
+            - /url: products.html
+    - region "Whispers from the patch" [ref=e56]:
+      - generic [ref=e57]:
+        - heading "Whispers from the patch" [level=2] [ref=e58]
+        - paragraph [ref=e59]: Real rooms. Real light. Unreal ceramics.
+        - generic [ref=e60]:
+          - article [ref=e61]:
+            - button "Enlarge customer photo 1" [ref=e62]:
+              - img "Interior with warm lighting and decor"
+              - text: 🔍
+            - generic [ref=e64]:
+              - strong [ref=e65]: Elena
+              - text: Barcelona
+            - paragraph [ref=e66]: “The weight, the glaze, the stem—I actually tapped it expecting hollow plastic. It’s the most convincing piece I own.”
+          - article [ref=e67]:
+            - button "Enlarge customer photo 2" [ref=e68]:
+              - img "Living room with curated furniture"
+              - text: 🔍
+            - generic [ref=e70]:
+              - strong [ref=e71]: Marcus
+              - text: Chicago
+            - paragraph [ref=e72]: “Reads premium in person. My living room went from ‘decorated’ to ‘curated’ in one object.”
+          - article [ref=e73]:
+            - button "Enlarge customer photo 3" [ref=e74]:
+              - img "Soft lamp light in a cozy interior"
+              - text: 🔍
+            - generic [ref=e76]:
+              - strong [ref=e77]: Priya
+              - text: Singapore
+            - paragraph [ref=e78]: “Subtle spooky, not cartoon. It photographs like sculpture and still feels cozy when the lights go low.”
+    - region "Your collection, remembered." [ref=e79]:
+      - generic [ref=e80]:
+        - heading "Your collection, remembered." [level=2] [ref=e81]
+        - paragraph [ref=e82]: Save pieces you love, track orders, and unlock early access to limited autumn drops.
+        - link "Sign in to your account" [ref=e83] [cursor=pointer]:
+          - /url: login.html
+  - contentinfo [ref=e84]:
+    - paragraph [ref=e85]: © ViviCeramics. All hallows reserved.

@@ -1,0 +1,7 @@
+[     365ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/bundle.js:89894
+[     468ms] [ERROR] Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `RemotionRoot`.  @ http://localhost:3000/bundle.js:53869
+[  102017ms] [LOG] [Fast refresh] ./node_modules/@react-three/drei/core/Texture.js fast refreshed. @ http://localhost:3000/bundle.js:60148
+[  102018ms] [LOG] [Fast refresh] ./src/components/PumpkinRotation.tsx fast refreshed. @ http://localhost:3000/bundle.js:60148
+[  102018ms] [LOG] [Fast refresh] ./src/Root.tsx fast refreshed. @ http://localhost:3000/bundle.js:60148

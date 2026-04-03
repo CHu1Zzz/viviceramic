@@ -1,0 +1,14 @@
+[     504ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/bundle.js:89836
+[     765ms] [ERROR] Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `RemotionRoot`.  @ http://localhost:3000/bundle.js:53811
+[  183103ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://localhost:3000/events:0
+[  183103ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://localhost:3000/events:0
+[  185510ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/api/unsubscribe-from-default-props:0
+[  185760ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/events:0
+[  186477ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/events:0
+[  196281ms] [WARNING] [Fast refresh] Update check failed: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON @ http://localhost:3000/bundle.js:60106
+[  197530ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/bundle.js:89836
+[  198190ms] [ERROR] Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `RemotionRoot`.  @ http://localhost:3000/bundle.js:53811

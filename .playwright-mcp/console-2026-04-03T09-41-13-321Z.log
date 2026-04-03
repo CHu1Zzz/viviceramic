@@ -1,0 +1,744 @@
+[     413ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/breeserif/v18/4UaHrEJCrhhnVA3DgluA96Tp56N1.woff2 @ http://localhost:3000/bundle.js:149026
+[     413ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/breeserif/v18/4UaHrEJCrhhnVA3DgluA96rp5w.woff2 @ http://localhost:3000/bundle.js:149026
+[     455ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/bundle.js:89855
+[     749ms] [ERROR] Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `RemotionRoot`.  @ http://localhost:3000/bundle.js:53830
+[     855ms] Error: The "width" prop of the <ThreeCanvas /> component must be a number, but you passed a value of type undefined
+    at validateDimension (http://localhost:3000/bundle.js:205908:11)
+    at ThreeCanvas (http://localhost:3000/bundle.js:158577:3)
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87756:20)
+    at renderWithHooks (http://localhost:3000/bundle.js:69514:22)
+    at updateFunctionComponent (http://localhost:3000/bundle.js:72018:19)
+    at beginWork (http://localhost:3000/bundle.js:73630:18)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62724:30)
+    at performUnitOfWork (http://localhost:3000/bundle.js:79493:22)
+    at workLoopSync (http://localhost:3000/bundle.js:79321:41)
+    at renderRootSync (http://localhost:3000/bundle.js:79302:11)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:78435:35)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/bundle.js:80809:7)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:92967:48)
+[     839ms] [WARNING] %s
+
+%s
+ An error occurred in the <ThreeCanvas> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:71213
+[     858ms] Error: ForceSpecificCursor is not mounted
+    at stopForcingSpecificCursor (http://localhost:3000/bundle.js:30677:15)
+    at cleanup (http://localhost:3000/bundle.js:47954:65)
+    at http://localhost:3000/bundle.js:47963:17
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87853:13)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62724:30)
+    at commitHookEffectListUnmount (http://localhost:3000/bundle.js:75168:17)
+    at commitHookPassiveUnmountEffects (http://localhost:3000/bundle.js:75199:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (http://localhost:3000/bundle.js:78116:13)
+    at recursivelyTraversePassiveUnmountEffects (http://localhost:3000/bundle.js:77937:13)
+    at commitPassiveUnmountOnFiber (http://localhost:3000/bundle.js:77979:11)
+    at flushPassiveEffects (http://localhost:3000/bundle.js:80280:9)
+    at flushPendingEffects (http://localhost:3000/bundle.js:80210:14)
+    at performSyncWorkOnRoot (http://localhost:3000/bundle.js:80821:11)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/bundle.js:80666:21)
+    at flushSpawnedWork (http://localhost:3000/bundle.js:80186:9)
+    at commitRoot (http://localhost:3000/bundle.js:79807:9)
+    at commitRootWhenReady (http://localhost:3000/bundle.js:78676:7)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:78574:15)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/bundle.js:80809:7)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:92967:48)
+[     844ms] [WARNING] %s
+
+%s
+ An error occurred in the <SplitterHandle> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:71213
+[     860ms] Error: ForceSpecificCursor is not mounted
+    at stopForcingSpecificCursor (http://localhost:3000/bundle.js:30677:15)
+    at cleanup (http://localhost:3000/bundle.js:47954:65)
+    at http://localhost:3000/bundle.js:47963:17
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87853:13)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62724:30)
+    at commitHookEffectListUnmount (http://localhost:3000/bundle.js:75168:17)
+    at commitHookPassiveUnmountEffects (http://localhost:3000/bundle.js:75199:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (http://localhost:3000/bundle.js:78116:13)
+    at recursivelyTraversePassiveUnmountEffects (http://localhost:3000/bundle.js:77937:13)
+    at commitPassiveUnmountOnFiber (http://localhost:3000/bundle.js:77979:11)
+    at flushPassiveEffects (http://localhost:3000/bundle.js:80280:9)
+    at flushPendingEffects (http://localhost:3000/bundle.js:80210:14)
+    at performSyncWorkOnRoot (http://localhost:3000/bundle.js:80821:11)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/bundle.js:80666:21)
+    at flushSpawnedWork (http://localhost:3000/bundle.js:80186:9)
+    at commitRoot (http://localhost:3000/bundle.js:79807:9)
+    at commitRootWhenReady (http://localhost:3000/bundle.js:78676:7)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:78574:15)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/bundle.js:80809:7)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:92967:48)
+[     844ms] [WARNING] %s
+
+%s
+ An error occurred in the <SplitterHandle> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:71213
+[  134667ms] [LOG] [Fast refresh] ./node_modules/@remotion/bundler/css-loader/index.js!./node_modules/@tailwindcss/webpack/dist/index.js!./src/index.css fast refreshed. @ http://localhost:3000/bundle.js:60109
+[  135863ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/bundle.js:89855
+[  136198ms] [ERROR] Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `RemotionRoot`.  @ http://localhost:3000/bundle.js:53830
+[  136817ms] TypeError: (0 , _remotion_three__WEBPACK_IMPORTED_MODULE_4__.useTexture) is not a function
+    at useProcessedTexture (http://localhost:3000/bundle.js:16999:78)
+    at PumpkinMesh (http://localhost:3000/bundle.js:17049:19)
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:13718:22)
+    at It (http://localhost:3000/bundle.js:9329:17)
+    at ks (http://localhost:3000/bundle.js:10389:366)
+    at tt (http://localhost:3000/bundle.js:10712:20)
+    at B (http://localhost:3000/bundle.js:8148:60)
+    at Ph (http://localhost:3000/bundle.js:12635:42)
+    at wh (http://localhost:3000/bundle.js:12551:30)
+    at Ff (http://localhost:3000/bundle.js:12543:11)
+    at Lf (http://localhost:3000/bundle.js:12319:57)
+    at Tu (http://localhost:3000/bundle.js:8543:121)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:92967:48)
+[  136980ms] TypeError: (0 , _remotion_three__WEBPACK_IMPORTED_MODULE_4__.useTexture) is not a function
+    at useProcessedTexture (http://localhost:3000/bundle.js:16999:78)
+    at PumpkinMesh (http://localhost:3000/bundle.js:17049:19)
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:13718:22)
+    at It (http://localhost:3000/bundle.js:9329:17)
+    at ks (http://localhost:3000/bundle.js:10389:366)
+    at tt (http://localhost:3000/bundle.js:10712:20)
+    at B (http://localhost:3000/bundle.js:8148:60)
+    at Ph (http://localhost:3000/bundle.js:12635:42)
+    at wh (http://localhost:3000/bundle.js:12551:30)
+    at Ff (http://localhost:3000/bundle.js:12543:11)
+    at Lf (http://localhost:3000/bundle.js:12319:57)
+    at Tu (http://localhost:3000/bundle.js:8543:121)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:92967:48)
+[  136977ms] [WARNING] %s
+
+%s
+ An error occurred in the <CanvasImpl> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:71213
+[  136999ms] Error: ForceSpecificCursor is not mounted
+    at stopForcingSpecificCursor (http://localhost:3000/bundle.js:30677:15)
+    at cleanup (http://localhost:3000/bundle.js:47954:65)
+    at http://localhost:3000/bundle.js:47963:17
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87853:13)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62724:30)
+    at commitHookEffectListUnmount (http://localhost:3000/bundle.js:75168:17)
+    at commitHookPassiveUnmountEffects (http://localhost:3000/bundle.js:75199:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (http://localhost:3000/bundle.js:78116:13)
+    at recursivelyTraversePassiveUnmountEffects (http://localhost:3000/bundle.js:77937:13)
+    at commitPassiveUnmountOnFiber (http://localhost:3000/bundle.js:77979:11)
+    at flushPassiveEffects (http://localhost:3000/bundle.js:80280:9)
+    at flushPendingEffects (http://localhost:3000/bundle.js:80210:14)
+    at performSyncWorkOnRoot (http://localhost:3000/bundle.js:80821:11)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/bundle.js:80666:21)
+    at flushSpawnedWork (http://localhost:3000/bundle.js:80186:9)
+    at commitRoot (http://localhost:3000/bundle.js:79807:9)
+    at commitRootWhenReady (http://localhost:3000/bundle.js:78676:7)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:78574:15)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/bundle.js:80809:7)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:92967:48)
+[  136997ms] [WARNING] %s
+
+%s
+ An error occurred in the <SplitterHandle> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:71213
+[  137004ms] Error: ForceSpecificCursor is not mounted
+    at stopForcingSpecificCursor (http://localhost:3000/bundle.js:30677:15)
+    at cleanup (http://localhost:3000/bundle.js:47954:65)
+    at http://localhost:3000/bundle.js:47963:17
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87853:13)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62724:30)
+    at commitHookEffectListUnmount (http://localhost:3000/bundle.js:75168:17)
+    at commitHookPassiveUnmountEffects (http://localhost:3000/bundle.js:75199:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (http://localhost:3000/bundle.js:78116:13)
+    at recursivelyTraversePassiveUnmountEffects (http://localhost:3000/bundle.js:77937:13)
+    at commitPassiveUnmountOnFiber (http://localhost:3000/bundle.js:77979:11)
+    at flushPassiveEffects (http://localhost:3000/bundle.js:80280:9)
+    at flushPendingEffects (http://localhost:3000/bundle.js:80210:14)
+    at performSyncWorkOnRoot (http://localhost:3000/bundle.js:80821:11)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/bundle.js:80666:21)
+    at flushSpawnedWork (http://localhost:3000/bundle.js:80186:9)
+    at commitRoot (http://localhost:3000/bundle.js:79807:9)
+    at commitRootWhenReady (http://localhost:3000/bundle.js:78676:7)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:78574:15)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/bundle.js:80809:7)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:92967:48)
+[  136998ms] [WARNING] %s
+
+%s
+ An error occurred in the <SplitterHandle> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:71213
+[  137007ms] Error: ForceSpecificCursor is not mounted
+    at stopForcingSpecificCursor (http://localhost:3000/bundle.js:30677:15)
+    at cleanup (http://localhost:3000/bundle.js:47954:65)
+    at http://localhost:3000/bundle.js:47963:17
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87853:13)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62724:30)
+    at commitHookEffectListUnmount (http://localhost:3000/bundle.js:75168:17)
+    at commitHookPassiveUnmountEffects (http://localhost:3000/bundle.js:75199:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (http://localhost:3000/bundle.js:78116:13)
+    at recursivelyTraversePassiveUnmountEffects (http://localhost:3000/bundle.js:77937:13)
+    at commitPassiveUnmountOnFiber (http://localhost:3000/bundle.js:77979:11)
+    at flushPassiveEffects (http://localhost:3000/bundle.js:80280:9)
+    at flushPendingEffects (http://localhost:3000/bundle.js:80210:14)
+    at performSyncWorkOnRoot (http://localhost:3000/bundle.js:80821:11)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/bundle.js:80666:21)
+    at flushSpawnedWork (http://localhost:3000/bundle.js:80186:9)
+    at commitRoot (http://localhost:3000/bundle.js:79807:9)
+    at commitRootWhenReady (http://localhost:3000/bundle.js:78676:7)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:78574:15)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/bundle.js:80809:7)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:92967:48)
+[  136998ms] [WARNING] %s
+
+%s
+ An error occurred in the <SplitterHandle> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:71213
+[  137935ms] [LOG] THREE.WebGLRenderer: Context Lost. @ http://localhost:3000/bundle.js:235562
+[  517793ms] [LOG] [Fast refresh] ./node_modules/@react-three/drei/core/Texture.js fast refreshed. @ http://localhost:3000/bundle.js:60109
+[  517794ms] [LOG] [Fast refresh] ./src/components/PumpkinRotation.tsx fast refreshed. @ http://localhost:3000/bundle.js:60109
+[  517794ms] [LOG] [Fast refresh] ./src/Root.tsx fast refreshed. @ http://localhost:3000/bundle.js:60109
+[  517797ms] [LOG] Could not check for bugs in this version TypeError: Failed to fetch
+    at http://localhost:3000/bundle.js:52582:9
+    at http://localhost:3000/bundle.js:52600:27
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87841:20)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62724:30)
+    at commitHookEffectListMount (http://localhost:3000/bundle.js:75101:29)
+    at commitHookPassiveMountEffects (http://localhost:3000/bundle.js:75188:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77336:13)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11) @ http://localhost:3000/bundle.js:52593
+[  517797ms] [LOG] Could not check for updates TypeError: Failed to fetch
+    at http://localhost:3000/bundle.js:53177:9
+    at new Promise (<anonymous>)
+    at callApi (http://localhost:3000/bundle.js:53176:12)
+    at updateAvailable (http://localhost:3000/bundle.js:46394:35)
+    at http://localhost:3000/bundle.js:52567:39
+    at http://localhost:3000/bundle.js:52599:29
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87841:20)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62724:30)
+    at commitHookEffectListMount (http://localhost:3000/bundle.js:75101:29)
+    at commitHookPassiveMountEffects (http://localhost:3000/bundle.js:75188:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77336:13)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77328:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77570:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77291:11) @ http://localhost:3000/bundle.js:52575
+[  518918ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/bundle.js:89894
+[  519207ms] [ERROR] Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `RemotionRoot`.  @ http://localhost:3000/bundle.js:53869
+[  520534ms] ReferenceError: PUMPKKIN_IMAGE is not defined
+    at PumpkinMesh (http://localhost:3000/bundle.js:17104:81)
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:13799:22)
+    at It (http://localhost:3000/bundle.js:9410:17)
+    at ks (http://localhost:3000/bundle.js:10470:366)
+    at tt (http://localhost:3000/bundle.js:10793:20)
+    at B (http://localhost:3000/bundle.js:8229:60)
+    at Ph (http://localhost:3000/bundle.js:12716:42)
+    at wh (http://localhost:3000/bundle.js:12632:30)
+    at Ff (http://localhost:3000/bundle.js:12624:11)
+    at Lf (http://localhost:3000/bundle.js:12400:57)
+    at Tu (http://localhost:3000/bundle.js:8624:121)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:93006:48)
+[  520604ms] ReferenceError: PUMPKKIN_IMAGE is not defined
+    at PumpkinMesh (http://localhost:3000/bundle.js:17104:81)
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:13799:22)
+    at It (http://localhost:3000/bundle.js:9410:17)
+    at ks (http://localhost:3000/bundle.js:10470:366)
+    at tt (http://localhost:3000/bundle.js:10793:20)
+    at B (http://localhost:3000/bundle.js:8229:60)
+    at Ph (http://localhost:3000/bundle.js:12716:42)
+    at wh (http://localhost:3000/bundle.js:12632:30)
+    at Ff (http://localhost:3000/bundle.js:12624:11)
+    at Lf (http://localhost:3000/bundle.js:12400:57)
+    at Tu (http://localhost:3000/bundle.js:8624:121)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:93006:48)
+[  520605ms] [WARNING] %s
+
+%s
+ An error occurred in the <CanvasImpl> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:71252
+[  520626ms] Error: ForceSpecificCursor is not mounted
+    at stopForcingSpecificCursor (http://localhost:3000/bundle.js:30716:15)
+    at cleanup (http://localhost:3000/bundle.js:47993:65)
+    at http://localhost:3000/bundle.js:48002:17
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87892:13)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62763:30)
+    at commitHookEffectListUnmount (http://localhost:3000/bundle.js:75207:17)
+    at commitHookPassiveUnmountEffects (http://localhost:3000/bundle.js:75238:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (http://localhost:3000/bundle.js:78155:13)
+    at recursivelyTraversePassiveUnmountEffects (http://localhost:3000/bundle.js:77976:13)
+    at commitPassiveUnmountOnFiber (http://localhost:3000/bundle.js:78018:11)
+    at flushPassiveEffects (http://localhost:3000/bundle.js:80319:9)
+    at flushPendingEffects (http://localhost:3000/bundle.js:80249:14)
+    at performSyncWorkOnRoot (http://localhost:3000/bundle.js:80860:11)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/bundle.js:80705:21)
+    at flushSpawnedWork (http://localhost:3000/bundle.js:80225:9)
+    at commitRoot (http://localhost:3000/bundle.js:79846:9)
+    at commitRootWhenReady (http://localhost:3000/bundle.js:78715:7)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:78613:15)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/bundle.js:80848:7)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:93006:48)
+[  520625ms] [WARNING] %s
+
+%s
+ An error occurred in the <SplitterHandle> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:71252
+[  520629ms] Error: ForceSpecificCursor is not mounted
+    at stopForcingSpecificCursor (http://localhost:3000/bundle.js:30716:15)
+    at cleanup (http://localhost:3000/bundle.js:47993:65)
+    at http://localhost:3000/bundle.js:48002:17
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87892:13)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62763:30)
+    at commitHookEffectListUnmount (http://localhost:3000/bundle.js:75207:17)
+    at commitHookPassiveUnmountEffects (http://localhost:3000/bundle.js:75238:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (http://localhost:3000/bundle.js:78155:13)
+    at recursivelyTraversePassiveUnmountEffects (http://localhost:3000/bundle.js:77976:13)
+    at commitPassiveUnmountOnFiber (http://localhost:3000/bundle.js:78018:11)
+    at flushPassiveEffects (http://localhost:3000/bundle.js:80319:9)
+    at flushPendingEffects (http://localhost:3000/bundle.js:80249:14)
+    at performSyncWorkOnRoot (http://localhost:3000/bundle.js:80860:11)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/bundle.js:80705:21)
+    at flushSpawnedWork (http://localhost:3000/bundle.js:80225:9)
+    at commitRoot (http://localhost:3000/bundle.js:79846:9)
+    at commitRootWhenReady (http://localhost:3000/bundle.js:78715:7)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:78613:15)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/bundle.js:80848:7)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:93006:48)
+[  520626ms] [WARNING] %s
+
+%s
+ An error occurred in the <SplitterHandle> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:71252
+[  520630ms] Error: ForceSpecificCursor is not mounted
+    at stopForcingSpecificCursor (http://localhost:3000/bundle.js:30716:15)
+    at cleanup (http://localhost:3000/bundle.js:47993:65)
+    at http://localhost:3000/bundle.js:48002:17
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87892:13)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62763:30)
+    at commitHookEffectListUnmount (http://localhost:3000/bundle.js:75207:17)
+    at commitHookPassiveUnmountEffects (http://localhost:3000/bundle.js:75238:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (http://localhost:3000/bundle.js:78155:13)
+    at recursivelyTraversePassiveUnmountEffects (http://localhost:3000/bundle.js:77976:13)
+    at commitPassiveUnmountOnFiber (http://localhost:3000/bundle.js:78018:11)
+    at flushPassiveEffects (http://localhost:3000/bundle.js:80319:9)
+    at flushPendingEffects (http://localhost:3000/bundle.js:80249:14)
+    at performSyncWorkOnRoot (http://localhost:3000/bundle.js:80860:11)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/bundle.js:80705:21)
+    at flushSpawnedWork (http://localhost:3000/bundle.js:80225:9)
+    at commitRoot (http://localhost:3000/bundle.js:79846:9)
+    at commitRootWhenReady (http://localhost:3000/bundle.js:78715:7)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:78613:15)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/bundle.js:80848:7)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:93006:48)
+[  520627ms] [WARNING] %s
+
+%s
+ An error occurred in the <SplitterHandle> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:71252
+[  521393ms] [LOG] THREE.WebGLRenderer: Context Lost. @ http://localhost:3000/bundle.js:235601
+[  640001ms] [LOG] [Fast refresh] ./node_modules/@react-three/drei/core/Texture.js fast refreshed. @ http://localhost:3000/bundle.js:60148
+[  640002ms] [LOG] [Fast refresh] ./src/components/PumpkinRotation.tsx fast refreshed. @ http://localhost:3000/bundle.js:60148
+[  640002ms] [LOG] [Fast refresh] ./src/Root.tsx fast refreshed. @ http://localhost:3000/bundle.js:60148
+[  640005ms] [LOG] Could not check for bugs in this version TypeError: Failed to fetch
+    at http://localhost:3000/bundle.js:52621:9
+    at http://localhost:3000/bundle.js:52639:27
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87880:20)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62763:30)
+    at commitHookEffectListMount (http://localhost:3000/bundle.js:75140:29)
+    at commitHookPassiveMountEffects (http://localhost:3000/bundle.js:75227:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77375:13)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11) @ http://localhost:3000/bundle.js:52632
+[  640006ms] [WARNING] [Fast refresh] Update check failed: TypeError: Failed to fetch
+    at __webpack_require__.hmrM (http://localhost:3000/bundle.js:276933:20)
+    at async check (http://localhost:3000/bundle.js:60116:28) @ http://localhost:3000/bundle.js:60164
+[  640007ms] [LOG] Could not check for updates TypeError: Failed to fetch
+    at http://localhost:3000/bundle.js:53216:9
+    at new Promise (<anonymous>)
+    at callApi (http://localhost:3000/bundle.js:53215:12)
+    at updateAvailable (http://localhost:3000/bundle.js:46433:35)
+    at http://localhost:3000/bundle.js:52606:39
+    at http://localhost:3000/bundle.js:52638:29
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87880:20)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62763:30)
+    at commitHookEffectListMount (http://localhost:3000/bundle.js:75140:29)
+    at commitHookPassiveMountEffects (http://localhost:3000/bundle.js:75227:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77375:13)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77367:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77609:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77330:11) @ http://localhost:3000/bundle.js:52614
+[  641077ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/bundle.js:89826
+[  641381ms] [ERROR] Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `RemotionRoot`.  @ http://localhost:3000/bundle.js:53801
+[  642324ms] ReferenceError: useTexture is not defined
+    at PumpkinMesh (http://localhost:3000/bundle.js:17021:19)
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:13718:22)
+    at It (http://localhost:3000/bundle.js:9329:17)
+    at ks (http://localhost:3000/bundle.js:10389:366)
+    at tt (http://localhost:3000/bundle.js:10712:20)
+    at B (http://localhost:3000/bundle.js:8148:60)
+    at Ph (http://localhost:3000/bundle.js:12635:42)
+    at wh (http://localhost:3000/bundle.js:12551:30)
+    at Ff (http://localhost:3000/bundle.js:12543:11)
+    at Lf (http://localhost:3000/bundle.js:12319:57)
+    at Tu (http://localhost:3000/bundle.js:8543:121)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:92938:48)
+[  642460ms] ReferenceError: useTexture is not defined
+    at PumpkinMesh (http://localhost:3000/bundle.js:17021:19)
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:13718:22)
+    at It (http://localhost:3000/bundle.js:9329:17)
+    at ks (http://localhost:3000/bundle.js:10389:366)
+    at tt (http://localhost:3000/bundle.js:10712:20)
+    at B (http://localhost:3000/bundle.js:8148:60)
+    at Ph (http://localhost:3000/bundle.js:12635:42)
+    at wh (http://localhost:3000/bundle.js:12551:30)
+    at Ff (http://localhost:3000/bundle.js:12543:11)
+    at Lf (http://localhost:3000/bundle.js:12319:57)
+    at Tu (http://localhost:3000/bundle.js:8543:121)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:92938:48)
+[  642461ms] [WARNING] %s
+
+%s
+ An error occurred in the <CanvasImpl> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:71184
+[  642480ms] Error: ForceSpecificCursor is not mounted
+    at stopForcingSpecificCursor (http://localhost:3000/bundle.js:30648:15)
+    at cleanup (http://localhost:3000/bundle.js:47925:65)
+    at http://localhost:3000/bundle.js:47934:17
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87824:13)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62695:30)
+    at commitHookEffectListUnmount (http://localhost:3000/bundle.js:75139:17)
+    at commitHookPassiveUnmountEffects (http://localhost:3000/bundle.js:75170:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (http://localhost:3000/bundle.js:78087:13)
+    at recursivelyTraversePassiveUnmountEffects (http://localhost:3000/bundle.js:77908:13)
+    at commitPassiveUnmountOnFiber (http://localhost:3000/bundle.js:77950:11)
+    at flushPassiveEffects (http://localhost:3000/bundle.js:80251:9)
+    at flushPendingEffects (http://localhost:3000/bundle.js:80181:14)
+    at performSyncWorkOnRoot (http://localhost:3000/bundle.js:80792:11)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/bundle.js:80637:21)
+    at flushSpawnedWork (http://localhost:3000/bundle.js:80157:9)
+    at commitRoot (http://localhost:3000/bundle.js:79778:9)
+    at commitRootWhenReady (http://localhost:3000/bundle.js:78647:7)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:78545:15)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/bundle.js:80780:7)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:92938:48)
+[  642480ms] [WARNING] %s
+
+%s
+ An error occurred in the <SplitterHandle> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:71184
+[  642481ms] Error: ForceSpecificCursor is not mounted
+    at stopForcingSpecificCursor (http://localhost:3000/bundle.js:30648:15)
+    at cleanup (http://localhost:3000/bundle.js:47925:65)
+    at http://localhost:3000/bundle.js:47934:17
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87824:13)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62695:30)
+    at commitHookEffectListUnmount (http://localhost:3000/bundle.js:75139:17)
+    at commitHookPassiveUnmountEffects (http://localhost:3000/bundle.js:75170:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (http://localhost:3000/bundle.js:78087:13)
+    at recursivelyTraversePassiveUnmountEffects (http://localhost:3000/bundle.js:77908:13)
+    at commitPassiveUnmountOnFiber (http://localhost:3000/bundle.js:77950:11)
+    at flushPassiveEffects (http://localhost:3000/bundle.js:80251:9)
+    at flushPendingEffects (http://localhost:3000/bundle.js:80181:14)
+    at performSyncWorkOnRoot (http://localhost:3000/bundle.js:80792:11)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/bundle.js:80637:21)
+    at flushSpawnedWork (http://localhost:3000/bundle.js:80157:9)
+    at commitRoot (http://localhost:3000/bundle.js:79778:9)
+    at commitRootWhenReady (http://localhost:3000/bundle.js:78647:7)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:78545:15)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/bundle.js:80780:7)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:92938:48)
+[  642481ms] [WARNING] %s
+
+%s
+ An error occurred in the <SplitterHandle> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:71184
+[  642482ms] Error: ForceSpecificCursor is not mounted
+    at stopForcingSpecificCursor (http://localhost:3000/bundle.js:30648:15)
+    at cleanup (http://localhost:3000/bundle.js:47925:65)
+    at http://localhost:3000/bundle.js:47934:17
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87824:13)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62695:30)
+    at commitHookEffectListUnmount (http://localhost:3000/bundle.js:75139:17)
+    at commitHookPassiveUnmountEffects (http://localhost:3000/bundle.js:75170:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (http://localhost:3000/bundle.js:78087:13)
+    at recursivelyTraversePassiveUnmountEffects (http://localhost:3000/bundle.js:77908:13)
+    at commitPassiveUnmountOnFiber (http://localhost:3000/bundle.js:77950:11)
+    at flushPassiveEffects (http://localhost:3000/bundle.js:80251:9)
+    at flushPendingEffects (http://localhost:3000/bundle.js:80181:14)
+    at performSyncWorkOnRoot (http://localhost:3000/bundle.js:80792:11)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/bundle.js:80637:21)
+    at flushSpawnedWork (http://localhost:3000/bundle.js:80157:9)
+    at commitRoot (http://localhost:3000/bundle.js:79778:9)
+    at commitRootWhenReady (http://localhost:3000/bundle.js:78647:7)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:78545:15)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/bundle.js:80780:7)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/bundle.js:92938:48)
+[  642482ms] [WARNING] %s
+
+%s
+ An error occurred in the <SplitterHandle> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:71184
+[  643495ms] [LOG] THREE.WebGLRenderer: Context Lost. @ http://localhost:3000/bundle.js:235533
+[  769382ms] [LOG] [Fast refresh] ./node_modules/@react-three/drei/core/Texture.js fast refreshed. @ http://localhost:3000/bundle.js:60080
+[  769383ms] [LOG] [Fast refresh] ./src/components/PumpkinRotation.tsx fast refreshed. @ http://localhost:3000/bundle.js:60080
+[  769384ms] [LOG] [Fast refresh] ./src/Root.tsx fast refreshed. @ http://localhost:3000/bundle.js:60080
+[  769388ms] [LOG] Could not check for bugs in this version TypeError: Failed to fetch
+    at http://localhost:3000/bundle.js:52553:9
+    at http://localhost:3000/bundle.js:52571:27
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87812:20)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62695:30)
+    at commitHookEffectListMount (http://localhost:3000/bundle.js:75072:29)
+    at commitHookPassiveMountEffects (http://localhost:3000/bundle.js:75159:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77307:13)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11) @ http://localhost:3000/bundle.js:52564
+[  769388ms] [LOG] Could not check for updates TypeError: Failed to fetch
+    at http://localhost:3000/bundle.js:53148:9
+    at new Promise (<anonymous>)
+    at callApi (http://localhost:3000/bundle.js:53147:12)
+    at updateAvailable (http://localhost:3000/bundle.js:46365:35)
+    at http://localhost:3000/bundle.js:52538:39
+    at http://localhost:3000/bundle.js:52570:29
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:87812:20)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:62695:30)
+    at commitHookEffectListMount (http://localhost:3000/bundle.js:75072:29)
+    at commitHookPassiveMountEffects (http://localhost:3000/bundle.js:75159:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77307:13)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77299:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11)
+    at commitPassiveMountOnFiber (http://localhost:3000/bundle.js:77541:11)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/bundle.js:77262:11) @ http://localhost:3000/bundle.js:52546
+[  770598ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/bundle.js:89894
+[  770885ms] [ERROR] Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `RemotionRoot`.  @ http://localhost:3000/bundle.js:53869

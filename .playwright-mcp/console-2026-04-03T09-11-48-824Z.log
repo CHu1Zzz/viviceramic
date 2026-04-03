@@ -1,0 +1,115 @@
+[    1186ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/bundle.js:73355
+[    1636ms] [ERROR] Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `RemotionRoot`.  @ http://localhost:3000/bundle.js:37330
+[   59087ms] [WARNING] [Fast refresh] Update check failed: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON @ http://localhost:3000/bundle.js:43625
+[   60104ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/bundle.js:73355
+[   60518ms] [ERROR] Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `RemotionRoot`.  @ http://localhost:3000/bundle.js:37330
+[  140052ms] [LOG] [Fast refresh] ./src/components/PumpkinRotation.tsx fast refreshed. @ http://localhost:3000/bundle.js:43609
+[  140053ms] [LOG] [Fast refresh] ./src/Root.tsx fast refreshed. @ http://localhost:3000/bundle.js:43609
+[  140869ms] [LOG] [Fast refresh] ./src/components/PumpkinRotation.tsx fast refreshed. @ http://localhost:3000/bundle.js:43609
+[  140870ms] [LOG] [Fast refresh] ./src/Root.tsx fast refreshed. @ http://localhost:3000/bundle.js:43609
+[  150476ms] [LOG] [Fast refresh] ./src/components/PumpkinRotation.tsx fast refreshed. @ http://localhost:3000/bundle.js:43609
+[  150476ms] [LOG] [Fast refresh] ./src/Root.tsx fast refreshed. @ http://localhost:3000/bundle.js:43609
+[  160715ms] Error: outputRange can not be undefined
+    at interpolate (http://localhost:3000/bundle.js:183459:11)
+    at PumpkinRotation (http://localhost:3000/main.d40aaa00047b0804.hot-update.js:33:70)
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:71256:20)
+    at renderWithHooks (http://localhost:3000/bundle.js:53014:22)
+    at updateFunctionComponent (http://localhost:3000/bundle.js:55518:19)
+    at beginWork (http://localhost:3000/bundle.js:57130:18)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:46224:30)
+    at performUnitOfWork (http://localhost:3000/bundle.js:62993:22)
+    at workLoopSync (http://localhost:3000/bundle.js:62821:41)
+    at renderRootSync (http://localhost:3000/bundle.js:62802:11)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:61935:35)
+    at performSyncWorkOnRoot (http://localhost:3000/bundle.js:64324:7)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/bundle.js:64166:21)
+    at processRootScheduleInMicrotask (http://localhost:3000/bundle.js:64205:9)
+    at http://localhost:3000/bundle.js:64343:13
+[  160712ms] [WARNING] %s
+
+%s
+ An error occurred in the <PumpkinRotation> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:54713
+[  160733ms] Error: ForceSpecificCursor is not mounted
+    at stopForcingSpecificCursor (http://localhost:3000/bundle.js:14177:15)
+    at cleanup (http://localhost:3000/bundle.js:31454:65)
+    at http://localhost:3000/bundle.js:31463:17
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:71353:13)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:46224:30)
+    at commitHookEffectListUnmount (http://localhost:3000/bundle.js:58668:17)
+    at commitHookPassiveUnmountEffects (http://localhost:3000/bundle.js:58699:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (http://localhost:3000/bundle.js:61616:13)
+    at recursivelyTraversePassiveUnmountEffects (http://localhost:3000/bundle.js:61437:13)
+    at commitPassiveUnmountOnFiber (http://localhost:3000/bundle.js:61479:11)
+    at flushPassiveEffects (http://localhost:3000/bundle.js:63780:9)
+    at flushPendingEffects (http://localhost:3000/bundle.js:63710:14)
+    at flushSpawnedWork (http://localhost:3000/bundle.js:63675:44)
+    at commitRoot (http://localhost:3000/bundle.js:63307:9)
+    at commitRootWhenReady (http://localhost:3000/bundle.js:62176:7)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:62074:15)
+    at performSyncWorkOnRoot (http://localhost:3000/bundle.js:64324:7)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/bundle.js:64166:21)
+    at processRootScheduleInMicrotask (http://localhost:3000/bundle.js:64205:9)
+    at http://localhost:3000/bundle.js:64343:13
+[  160731ms] [WARNING] %s
+
+%s
+ An error occurred in the <SplitterHandle> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:54713
+[  160736ms] Error: ForceSpecificCursor is not mounted
+    at stopForcingSpecificCursor (http://localhost:3000/bundle.js:14177:15)
+    at cleanup (http://localhost:3000/bundle.js:31454:65)
+    at http://localhost:3000/bundle.js:31463:17
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:71353:13)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:46224:30)
+    at commitHookEffectListUnmount (http://localhost:3000/bundle.js:58668:17)
+    at commitHookPassiveUnmountEffects (http://localhost:3000/bundle.js:58699:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (http://localhost:3000/bundle.js:61616:13)
+    at recursivelyTraversePassiveUnmountEffects (http://localhost:3000/bundle.js:61437:13)
+    at commitPassiveUnmountOnFiber (http://localhost:3000/bundle.js:61479:11)
+    at flushPassiveEffects (http://localhost:3000/bundle.js:63780:9)
+    at flushPendingEffects (http://localhost:3000/bundle.js:63710:14)
+    at flushSpawnedWork (http://localhost:3000/bundle.js:63675:44)
+    at commitRoot (http://localhost:3000/bundle.js:63307:9)
+    at commitRootWhenReady (http://localhost:3000/bundle.js:62176:7)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:62074:15)
+    at performSyncWorkOnRoot (http://localhost:3000/bundle.js:64324:7)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/bundle.js:64166:21)
+    at processRootScheduleInMicrotask (http://localhost:3000/bundle.js:64205:9)
+    at http://localhost:3000/bundle.js:64343:13
+[  160731ms] [WARNING] %s
+
+%s
+ An error occurred in the <SplitterHandle> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:54713
+[  160738ms] Error: ForceSpecificCursor is not mounted
+    at stopForcingSpecificCursor (http://localhost:3000/bundle.js:14177:15)
+    at cleanup (http://localhost:3000/bundle.js:31454:65)
+    at http://localhost:3000/bundle.js:31463:17
+    at Object.react_stack_bottom_frame (http://localhost:3000/bundle.js:71353:13)
+    at runWithFiberInDEV (http://localhost:3000/bundle.js:46224:30)
+    at commitHookEffectListUnmount (http://localhost:3000/bundle.js:58668:17)
+    at commitHookPassiveUnmountEffects (http://localhost:3000/bundle.js:58699:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (http://localhost:3000/bundle.js:61616:13)
+    at recursivelyTraversePassiveUnmountEffects (http://localhost:3000/bundle.js:61437:13)
+    at commitPassiveUnmountOnFiber (http://localhost:3000/bundle.js:61479:11)
+    at flushPassiveEffects (http://localhost:3000/bundle.js:63780:9)
+    at flushPendingEffects (http://localhost:3000/bundle.js:63710:14)
+    at flushSpawnedWork (http://localhost:3000/bundle.js:63675:44)
+    at commitRoot (http://localhost:3000/bundle.js:63307:9)
+    at commitRootWhenReady (http://localhost:3000/bundle.js:62176:7)
+    at performWorkOnRoot (http://localhost:3000/bundle.js:62074:15)
+    at performSyncWorkOnRoot (http://localhost:3000/bundle.js:64324:7)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/bundle.js:64166:21)
+    at processRootScheduleInMicrotask (http://localhost:3000/bundle.js:64205:9)
+    at http://localhost:3000/bundle.js:64343:13
+[  160733ms] [WARNING] %s
+
+%s
+ An error occurred in the <SplitterHandle> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/bundle.js:54713
+[  164237ms] [WARNING] Scripts "build/three.js" and "build/three.min.js" are deprecated with r150+, and will be removed with r160. Please use ES Modules or alternatives: https://threejs.org/docs/index.html#manual/en/introduction/Installation @ https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js:0
