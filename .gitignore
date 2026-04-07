@@ -1,0 +1,27 @@
+# Playwright
+.playwright-mcp/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS
+__MACOSX/
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Screenshots / debug outputs (not project assets)
+*.png
+!viviceramic/images/products/*.png
+
+# Claude Code (optional - uncomment if you don't want session data)
+# .claude/

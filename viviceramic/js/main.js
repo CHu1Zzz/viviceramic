@@ -188,92 +188,88 @@
     `;
     container.appendChild(renderer.domElement);
 
-    // Load product texture
-    const textureLoader = new THREE.TextureLoader();
-    textureLoader.load(
-      "images/products/product-001.png",
-      function(texture) {
-        const aspect = texture.image.width / texture.image.height;
+    // Load product video texture
+    const video = document.createElement('video');
+    video.src = "images/products/3D动画相关协助 (1).mp4";
+    video.loop = true;
+    video.muted = true;
+    video.playsInline = true;
 
-        // Create product plane with transparent material
-        const geometry = new THREE.PlaneGeometry(2.2 * aspect, 2.2, 1, 1);
-        const material = new THREE.MeshBasicMaterial({
-          map: texture,
-          transparent: true,
-          opacity: 0.85,
-          side: THREE.DoubleSide,
-        });
+    video.addEventListener('loadeddata', function() {
+      video.play();
 
-        const product = new THREE.Mesh(geometry, material);
-        product.position.x = 0.3;
-        product.position.y = 0;
-        scene.add(product);
+      const texture = new THREE.VideoTexture(video);
+      texture.minFilter = THREE.LinearFilter;
+      texture.magFilter = THREE.LinearFilter;
+      texture.colorSpace = THREE.SRGBColorSpace;
 
-        // Ethereal glow behind product
-        const glowGeo = new THREE.PlaneGeometry(3 * aspect, 3);
-        const glowMat = new THREE.MeshBasicMaterial({
-          color: 0xe8722a,
-          transparent: true,
-          opacity: 0.15,
-          side: THREE.DoubleSide,
-        });
-        const glow = new THREE.Mesh(glowGeo, glowMat);
-        glow.position.z = -0.5;
-        glow.position.x = 0.3;
-        scene.add(glow);
+      const aspect = video.videoWidth / video.videoHeight;
 
-        // Ambient particles for ethereal effect
-        const particleCount = 30;
-        const particleGeo = new THREE.BufferGeometry();
-        const positions = new Float32Array(particleCount * 3);
-        for (let i = 0; i < particleCount; i++) {
-          positions[i * 3] = (Math.random() - 0.5) * 4;
-          positions[i * 3 + 1] = (Math.random() - 0.5) * 4;
-          positions[i * 3 + 2] = (Math.random() - 0.5) * 2;
-        }
-        particleGeo.setAttribute("position", new THREE.BufferAttribute(positions, 3));
-        const particleMat = new THREE.PointsMaterial({
-          color: 0xff8833,
-          size: 0.03,
-          transparent: true,
-          opacity: 0.4,
-        });
-        const particles = new THREE.Points(particleGeo, particleMat);
-        scene.add(particles);
+      // Create product plane with transparent material
+      const geometry = new THREE.PlaneGeometry(2.2 * aspect, 2.2, 1, 1);
+      const material = new THREE.MeshBasicMaterial({
+        map: texture,
+        transparent: true,
+        opacity: 0.85,
+        side: THREE.DoubleSide,
+      });
 
-        // Soft lighting
-        const ambient = new THREE.AmbientLight(0x3a2040, 0.5);
-        scene.add(ambient);
-        const key = new THREE.DirectionalLight(0xffdd88, 0.6);
-        key.position.set(2, 3, 4);
-        scene.add(key);
+      const product = new THREE.Mesh(geometry, material);
+      product.position.x = 0.3;
+      product.position.y = 0;
+      scene.add(product);
 
-        // Animation
-        let t = 0;
-        function animate() {
-          requestAnimationFrame(animate);
-          t += 0.004;
+      // Ethereal glow behind product
+      const glowGeo = new THREE.PlaneGeometry(3 * aspect, 3);
+      const glowMat = new THREE.MeshBasicMaterial({
+        color: 0xe8722a,
+        transparent: true,
+        opacity: 0.15,
+        side: THREE.DoubleSide,
+      });
+      const glow = new THREE.Mesh(glowGeo, glowMat);
+      glow.position.z = -0.5;
+      glow.position.x = 0.3;
+      scene.add(glow);
 
-          // Slow rotation
-          product.rotation.y = Math.sin(t * 0.3) * 0.4;
-          product.rotation.x = Math.sin(t * 0.2) * 0.05;
-
-          // Subtle float
-          product.position.y = Math.sin(t * 0.4) * 0.08;
-          glow.position.y = product.position.y;
-
-          // Particle drift
-          particles.rotation.y = t * 0.05;
-
-          renderer.render(scene, camera);
-        }
-        animate();
-      },
-      undefined,
-      function(err) {
-        console.error("Failed to load product texture:", err);
+      // Ambient particles for ethereal effect
+      const particleCount = 30;
+      const particleGeo = new THREE.BufferGeometry();
+      const positions = new Float32Array(particleCount * 3);
+      for (let i = 0; i < particleCount; i++) {
+        positions[i * 3] = (Math.random() - 0.5) * 4;
+        positions[i * 3 + 1] = (Math.random() - 0.5) * 4;
+        positions[i * 3 + 2] = (Math.random() - 0.5) * 2;
       }
-    );
+      particleGeo.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+      const particleMat = new THREE.PointsMaterial({
+        color: 0xff8833,
+        size: 0.03,
+        transparent: true,
+        opacity: 0.4,
+      });
+      const particles = new THREE.Points(particleGeo, particleMat);
+      scene.add(particles);
+
+      // Soft lighting
+      const ambient = new THREE.AmbientLight(0x3a2040, 0.5);
+      scene.add(ambient);
+      const key = new THREE.DirectionalLight(0xffdd88, 0.6);
+      key.position.set(2, 3, 4);
+      scene.add(key);
+
+      // Static display - no rotation
+      function animate() {
+        requestAnimationFrame(animate);
+
+        renderer.render(scene, camera);
+      }
+      animate();
+    });
+
+    video.addEventListener('error', function(err) {
+      console.error("Failed to load product video:", err);
+    });
 
     const ro = new ResizeObserver(() => {
       const w = container.clientWidth;
