@@ -19,9 +19,12 @@ __MACOSX/
 *.swp
 *~
 
-# Screenshots / debug outputs (not project assets)
+# Debug screenshots
 *.png
 !viviceramic/images/products/*.png
 
-# Claude Code (optional - uncomment if you don't want session data)
-# .claude/
+# Claude Code settings (optional)
+.claude/
+
+# Windows thumbnails
+Thumbs.db

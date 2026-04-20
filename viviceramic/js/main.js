@@ -6,14 +6,27 @@
       navProducts: "All Product",
       navResources: "Resources",
       navAbout: "About us",
-      heroEyebrow: "Hand-fired · Limited autumn runs",
-      heroTitleBefore: "Ceramic pumpkins, ",
-      heroTitleAccent: "uncannily real.",
+      heroEyebrow: "Hand-fired ceramics · Limited Halloween drops",
+      heroTitleBefore: "Ceramic pumpkins ",
+      heroTitleAccent: "for elevated Halloween\u00A0decorations.",
       heroSlogan:
-        "Hand-finished stoneware pumpkins that read like harvest—until the light catches the glaze and the room goes quiet.",
+        "Hand-finished ceramics for mantels, consoles, and the Halloween vignette guests notice first. Limited autumn batches only.",
       heroShop: "Shop the drop",
       heroStory: "Our craft",
       scrollHint: "Descend",
+      bsTitle: "Get our best sellers",
+      bsSub: "Hand-finished picks collectors grab first—limited autumn runs.",
+      bsFrom: "From",
+      bsAddCart: "Add to cart",
+      bsLearn: "Learn more",
+      bsCurrency: "USD",
+      bs1Name: "Hyper-real Classic Pumpkin",
+      bs2Name: "Petite Pumpkin Trio",
+      bs3Name: "Taper Throne Candle Cup",
+      bs4Name: "Heritage Stem Sculpt",
+      bs5Name: "Ember Glaze Limited Run",
+      bs6Name: "Patch Stems & Minis Set",
+      productsHeading: "Main ceramics types",
       p1Badge: "Signature",
       p1Title: "The pumpkin everyone mistakes for the real thing.",
       p1Body:
@@ -29,24 +42,80 @@
       r1: "“The weight, the glaze, the stem—I actually tapped it expecting hollow plastic. It’s the most convincing piece I own.”",
       r2: "“Reads premium in person. My living room went from ‘decorated’ to ‘curated’ in one object.”",
       r3: "“Subtle spooky, not cartoon. It photographs like sculpture and still feels cozy when the lights go low.”",
-      ctaTitle: "Your collection, remembered.",
+      ctaTitle: "Your Halloween decoration edit—in ceramics.",
       ctaSub:
-        "Save pieces you love, track orders, and unlock early access to limited autumn drops.",
+        "Save pieces you love, track orders, and get early access to limited autumn drops—before the patch sells through.",
       ctaBtn: "Sign in to your account",
       footer: "© ViviCeramics. All hallows reserved.",
+      catalogTitleAll: "All products",
+      catalogTitlePumpkins: "Pumpkins",
+      catalogTitleOthers: "Others",
+      catalogNavAll: "All",
+      catalogNavPumpkins: "Pumpkins",
+      catalogNavOthers: "Others",
+      catalogSub: "Hand-fired ceramics — limited autumn runs.",
+      catalogAvailability: "Availability",
+      catalogPrice: "Price",
+      catalogSort: "Sort by",
+      catalogSortFeatured: "Featured",
+      catalogCount20: "20 products",
+      catalogCount10: "10 products",
+      catalogPumpkinsSection: "Pumpkins",
+      catalogOthersSection: "Others",
+      catalogAddCart: "Add to cart",
+      catalogLearn: "Learn more",
+      catalogSale: "Sale",
+      aboutHeroKicker: "Our story",
+      aboutHeroTitle: "Ceramics for Halloween decorations that feel honest.",
+      aboutS1Kicker: "The problem we kept seeing",
+      aboutS1Title: "Halloween decorations that looked fine in photos—and cheap in person.",
+      aboutS1P1:
+        "We love October. We love a moody table and a candle that flickers just right. But year after year, the same thing happened: we’d buy Halloween decorations that looked exciting online, then unpack something light, hollow, and a little too shiny.",
+      aboutS1P2:
+        "Nothing wrong with fun plastic props for a party. But we wanted pieces that could sit on a mantel in daylight and still feel intentional—something closer to art than a prop.",
+      aboutS1P3:
+        "So we built our own path. ViviCeramics is centered on a team-owned factory—ceramics for Halloween decorations you’re proud to leave out when the lights come on.",
+      aboutS2Kicker: "Our factory",
+      aboutS2Title: "Built where we control every step.",
+      aboutS2P:
+        "Everything here comes from our team’s own factory. We’re not juggling random workshops across time zones. Shaping, drying, firing, and glazing happen under one roof with the same crew, so if something looks off, we fix it before it ships. Still small batches—quality over volume—but the line is ours start to finish.",
+      aboutS3Kicker: "What we believe",
+      aboutS3Title: "Quiet spooky. Real weight. Real glaze.",
+      aboutS3P1:
+        "Our product idea is simple: Halloween decorations should feel grounded. We use stoneware ceramics so the piece has weight when you pick it up. We keep shapes believable and finishes soft—more harvest moon than neon scream.",
+      aboutS3P2:
+        "We’re not trying to fill a warehouse. We release in limited autumn runs because that’s how we can keep quality where we want it. If you’re building a vignette—entryway, shelf, or table—our hope is that one of our pieces becomes the object people lean in to look at.",
+      aboutCtaKicker: "Ready to dress the room?",
+      aboutCtaTitle: "See this season’s ceramics.",
+      aboutCtaText:
+        "Browse pumpkins and accents, pick what fits your space, and bring home Halloween decorations that still look right when the party ends.",
+      aboutCtaBtn: "Shop all products",
     },
     zh: {
       navProducts: "全部产品",
       navResources: "资源",
       navAbout: "关于我们",
-      heroEyebrow: "手工烧制 · 秋季限量",
-      heroTitleBefore: "陶瓷南瓜，",
-      heroTitleAccent: "逼真得不像话。",
+      heroEyebrow: "手工陶瓷 · 万圣限量上新",
+      heroTitleBefore: "陶瓷南瓜 ",
+      heroTitleAccent: "为更有质感的万圣装饰而造。",
       heroSlogan:
-        "手工精修的炻器南瓜，远看像刚从田里摘下——直到光线掠过釉面，整个房间都会静下来。",
+        "手工陶瓷，点亮壁炉与玄关的万圣角落——客人第一眼会注意到。秋季小批量，售完即止。",
       heroShop: "选购系列",
       heroStory: "工艺故事",
       scrollHint: "向下滑动",
+      bsTitle: "当季热销",
+      bsSub: "手工精选——限量秋季批次，藏家常先入手。",
+      bsFrom: "低至",
+      bsAddCart: "加入购物车",
+      bsLearn: "了解更多",
+      bsCurrency: "美元",
+      bs1Name: "超逼真经典南瓜",
+      bs2Name: "迷你南瓜三人组",
+      bs3Name: "烛台杯 · Taper Throne",
+      bs4Name: "典藏茎雕款",
+      bs5Name: "余烬釉 · 限量批次",
+      bs6Name: "瓜蒂与迷你组合",
+      productsHeading: "主要陶瓷品类",
       p1Badge: "代表作",
       p1Title: "让人忍不住伸手确认「是不是真南瓜」的那一只。",
       p1Body:
@@ -62,10 +131,52 @@
       r1: "「分量、釉面、瓜蒂——我下意识敲了敲，还以为是空塑料。这是我家里最『像真』的一件。」",
       r2: "「实物非常显质感。客厅从『布置过』变成『被策展过』，就因为这一只。」",
       r3: "「是含蓄的万圣节气质，不是卡通。拍照像雕塑，关灯后又很居家。」",
-      ctaTitle: "你的收藏，被记住。",
-      ctaSub: "保存心仪款式、追踪订单，并优先获得秋季限量上新。",
+      ctaTitle: "你的万圣装饰清单——用陶瓷凑齐。",
+      ctaSub: "保存心仪款式、追踪订单，抢先获得限量秋季上新——热门款常在南瓜季结束前售罄。",
       ctaBtn: "登录账户",
       footer: "© ViviCeramics. 万圣保留所有氛围。",
+      catalogTitleAll: "全部产品",
+      catalogTitlePumpkins: "南瓜系列",
+      catalogTitleOthers: "其他器物",
+      catalogNavAll: "全部",
+      catalogNavPumpkins: "南瓜",
+      catalogNavOthers: "其他",
+      catalogSub: "手工陶瓷 — 秋季限量批次。",
+      catalogAvailability: "库存",
+      catalogPrice: "价格",
+      catalogSort: "排序",
+      catalogSortFeatured: "精选",
+      catalogCount20: "共 20 件",
+      catalogCount10: "共 10 件",
+      catalogPumpkinsSection: "南瓜系列",
+      catalogOthersSection: "其他器物",
+      catalogAddCart: "加入购物车",
+      catalogLearn: "了解更多",
+      catalogSale: "促销",
+      aboutHeroKicker: "品牌故事",
+      aboutHeroTitle: "做「诚实」的万圣装饰陶瓷。",
+      aboutS1Kicker: "我们反复看到的问题",
+      aboutS1Title: "照片里很万圣，拆开却有点「轻」。",
+      aboutS1P1:
+        "我们喜欢十月，也喜欢烛光刚好、角落刚刚好的氛围。但很多次：网上下单的万圣装饰，到手却轻飘飘、亮得有点假——像一次性道具，不像能长期摆在架子上的东西。",
+      aboutS1P2:
+        "派对用的塑料小道具没问题。但我们想要的是：白天放在壁炉上也顺眼、不开灯也像认真挑过的那一种——更像摆件，而不是拍完照就收起来的道具。",
+      aboutS1P3:
+        "于是我们走自己的路：ViviCeramics 以团队自有工厂为核心，做你愿意开灯后还愿意摆着的万圣装饰陶瓷。",
+      aboutS2Kicker: "自有工厂",
+      aboutS2Title: "从泥到釉，都在我们厂里完成。",
+      aboutS2P:
+        "在售的这些陶瓷，全来自我们团队自己的工厂。不是东一家西一家代工凑出来的货。塑形、干燥、烧制、上釉，都在同一支队伍、同一条产线里把关；不对劲就返工，不会让你收到一件我们自己都不想看第二眼的万圣装饰。仍然小批量——品质比走量重要——但整条线从头到尾都是我们的。",
+      aboutS3Kicker: "我们的理念",
+      aboutS3Title: "含蓄的万圣气质：有分量、有釉面。",
+      aboutS3P1:
+        "产品想法很简单：万圣装饰要「站得住」。我们用炻器陶瓷，拿在手里要有分量；造型尽量可信，釉面偏柔——更像秋收月色，而不是荧光尖叫。",
+      aboutS3P2:
+        "我们不想堆满仓库。秋季限量上新，是因为品质只能按这个节奏守住。无论你是布置玄关、层架还是餐桌一角，我们希望其中一件会成为别人会凑近看的那只。",
+      aboutCtaKicker: "准备布置房间了吗？",
+      aboutCtaTitle: "看看这一季的陶瓷。",
+      aboutCtaText: "浏览南瓜与搭配小物，选适合你的角落——把万圣装饰留到派对结束也还顺眼。",
+      aboutCtaBtn: "查看全部产品",
     },
   };
 
@@ -107,7 +218,7 @@
 
   /* —— Scroll reveal —— */
   function initReveal() {
-    const els = document.querySelectorAll(".product-card, .review-card, .cta-panel");
+    const els = document.querySelectorAll(".product-card, .bs-product-card, .review-card, .cta-panel");
     if (!els.length) return;
 
     const io = new IntersectionObserver(
@@ -124,6 +235,31 @@
     );
 
     els.forEach((el) => io.observe(el));
+  }
+
+  /* —— Best sellers rail (horizontal scroll + arrows) —— */
+  function initBestsellers() {
+    const track = document.getElementById("bs-track");
+    const prev = document.getElementById("bs-prev");
+    const next = document.getElementById("bs-next");
+    if (!track || !prev || !next) return;
+
+    const scroller = track.closest(".bs-window");
+    if (!scroller) return;
+
+    function stepPx() {
+      const first = track.querySelector(".bs-item");
+      if (!first) return 284;
+      const gap = parseFloat(getComputedStyle(track).gap) || 16;
+      return first.offsetWidth + gap;
+    }
+
+    prev.addEventListener("click", () => {
+      scroller.scrollBy({ left: -stepPx(), behavior: "smooth" });
+    });
+    next.addEventListener("click", () => {
+      scroller.scrollBy({ left: stepPx(), behavior: "smooth" });
+    });
   }
 
   /* —— Lightbox —— */
@@ -158,12 +294,151 @@
     });
   }
 
+  /* —— Three.js 3D Product Display —— */
+  function initHero3D() {
+    const container = document.getElementById("hero-3d");
+    if (!container || typeof THREE === "undefined") return;
+
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+    if (width < 2 || height < 2) return;
+
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.FogExp2(0x0a0612, 0.15);
+
+    const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
+    camera.position.set(0, 0, 3.5);
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(width, height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.setClearColor(0x000000, 0);
+    renderer.domElement.style.cssText = `
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    `;
+    container.appendChild(renderer.domElement);
+
+    // Load product video texture
+    const video = document.createElement('video');
+    video.src = "images/products/pumpkin-3d-demo.mp4";
+    video.loop = true;
+    video.muted = true;
+    video.playsInline = true;
+
+    video.addEventListener('loadeddata', function() {
+      video.play();
+
+      const texture = new THREE.VideoTexture(video);
+      texture.minFilter = THREE.LinearFilter;
+      texture.magFilter = THREE.LinearFilter;
+      texture.colorSpace = THREE.SRGBColorSpace;
+
+      const aspect = video.videoWidth / video.videoHeight;
+
+      // Create product plane with transparent material
+      const geometry = new THREE.PlaneGeometry(2.2 * aspect, 2.2, 1, 1);
+      const material = new THREE.MeshBasicMaterial({
+        map: texture,
+        transparent: true,
+        opacity: 0.85,
+        side: THREE.DoubleSide,
+      });
+
+      const product = new THREE.Mesh(geometry, material);
+      product.position.x = 0.3;
+      product.position.y = 0;
+      scene.add(product);
+
+      // Ethereal glow behind product
+      const glowGeo = new THREE.PlaneGeometry(3 * aspect, 3);
+      const glowMat = new THREE.MeshBasicMaterial({
+        color: 0xe8722a,
+        transparent: true,
+        opacity: 0.15,
+        side: THREE.DoubleSide,
+      });
+      const glow = new THREE.Mesh(glowGeo, glowMat);
+      glow.position.z = -0.5;
+      glow.position.x = 0.3;
+      scene.add(glow);
+
+      // Ambient particles for ethereal effect
+      const particleCount = 30;
+      const particleGeo = new THREE.BufferGeometry();
+      const positions = new Float32Array(particleCount * 3);
+      for (let i = 0; i < particleCount; i++) {
+        positions[i * 3] = (Math.random() - 0.5) * 4;
+        positions[i * 3 + 1] = (Math.random() - 0.5) * 4;
+        positions[i * 3 + 2] = (Math.random() - 0.5) * 2;
+      }
+      particleGeo.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+      const particleMat = new THREE.PointsMaterial({
+        color: 0xff8833,
+        size: 0.03,
+        transparent: true,
+        opacity: 0.4,
+      });
+      const particles = new THREE.Points(particleGeo, particleMat);
+      scene.add(particles);
+
+      // Soft lighting
+      const ambient = new THREE.AmbientLight(0x3a2040, 0.5);
+      scene.add(ambient);
+      const key = new THREE.DirectionalLight(0xffdd88, 0.6);
+      key.position.set(2, 3, 4);
+      scene.add(key);
+
+      // Static display - no rotation
+      function animate() {
+        requestAnimationFrame(animate);
+
+        renderer.render(scene, camera);
+      }
+      animate();
+    });
+
+    video.addEventListener('error', function(err) {
+      console.error("Failed to load product video:", err);
+    });
+
+    const ro = new ResizeObserver(() => {
+      const w = container.clientWidth;
+      const h = container.clientHeight;
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+      renderer.setSize(w, h);
+    });
+    ro.observe(container);
+  }
+
   document.getElementById("lang-toggle")?.addEventListener("click", toggleLang);
 
+  window.__VIVI_I18N = I18N;
+  window.__viviApplyI18n = applyI18n;
+
   document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("intro-active");
     applyI18n();
     initIntro();
     initReveal();
+    initBestsellers();
     initLightbox();
+
+    if (document.getElementById("hero-3d")) {
+      if (window.THREE) {
+        initHero3D();
+      } else {
+        const s = document.createElement("script");
+        s.src = "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js";
+        s.onload = () => initHero3D();
+        document.head.appendChild(s);
+      }
+    }
   });
 })();

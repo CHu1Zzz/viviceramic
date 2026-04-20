@@ -3,35 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us — ViviCeramics</title>
+    <title>About ViviCeramics — Artisan Ceramics &amp; Halloween Decorations</title>
+    <meta
+      name="description"
+      content="ViviCeramics: ceramics for Halloween decorations from our team-owned factory—small-batch pumpkins and accents for mantels and tables. Our story, quality, and how we work."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About ViviCeramics",
+        "description": "Ceramics for Halloween decorations from a team-owned factory—pumpkins and seasonal accents."
+      }
+    </script>
   </head>
-  <body>
+  <body class="about-body">
     <header class="site-header">
       <div class="header-inner">
-        <a class="logo-link" href="index.html"><span class="logo-mark" aria-hidden="true"></span>ViviCeramics</a>
+        <a class="logo-link" href="index.html" aria-label="ViviCeramics home">
+          <span class="logo-mark" aria-hidden="true"></span>
+          ViviCeramics
+        </a>
         <nav class="nav-main" aria-label="Primary">
-          <a href="products.html">All Product</a>
-          <a href="resources.html">Resources</a>
-          <a href="about.html">About us</a>
+          <a href="products/all.html" data-i18n="navProducts">All Product</a>
+          <a href="resources.html" data-i18n="navResources">Resources</a>
+          <a href="about.html" class="is-active" data-i18n="navAbout">About us</a>
         </nav>
         <div class="header-actions">
-          <span class="icon-btn lang-btn">EN</span>
-          <a href="products.html" class="icon-btn" aria-label="Cart">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+          <button type="button" class="icon-btn lang-btn" id="lang-toggle" aria-label="Switch language">EN</button>
+          <a href="products/all.html" class="icon-btn" aria-label="Cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
               <path d="M6 8h15l-1.5 9H7.5L6 8zm0 0L5 3H2" stroke-linecap="round" stroke-linejoin="round" />
               <circle cx="9" cy="20" r="1.5" fill="currentColor" stroke="none" />
               <circle cx="18" cy="20" r="1.5" fill="currentColor" stroke="none" />
             </svg>
           </a>
           <a href="login.html" class="icon-btn" aria-label="Account">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
               <circle cx="12" cy="8" r="3.5" />
               <path d="M5 20v-1c0-3 2.5-5.5 7-5.5s7 2.5 7 5.5v1" stroke-linecap="round" />
             </svg>
@@ -39,11 +54,105 @@
         </div>
       </div>
     </header>
-    <main class="page-main">
-      <h1>About us</h1>
-      <p>Studio story, firing process, and the obsession with believable stems — placeholder for your brand narrative.</p>
-      <p><a class="product-link" href="index.html">← Back to home</a></p>
+
+    <main class="about-page">
+      <!-- EDJY-style: full-bleed landscape hero image only (no side padding on image) -->
+      <section class="about-hero-wide" aria-label="ViviCeramics story hero image">
+        <figure class="about-hero-figure">
+          <img
+            class="about-hero-wide-img"
+            src="https://images.unsplash.com/photo-1509557965877-b88c97052f0e?w=2400&q=85&auto=format"
+            alt="Autumn pumpkins and ceramics — ViviCeramics"
+            width="2400"
+            height="1200"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </figure>
+      </section>
+
+      <!-- Editorial band: kicker + H1 + story (dark, matches site) -->
+      <section class="about-strip about-strip--dark" aria-labelledby="about-genesis-title">
+        <div class="about-strip-inner">
+          <p class="about-kicker" data-i18n="aboutHeroKicker">Our story</p>
+          <h1 id="about-genesis-title" class="about-genesis-title" data-i18n="aboutHeroTitle">
+            Ceramics for Halloween decorations that feel honest.
+          </h1>
+
+          <p class="about-kicker about-kicker--spaced" data-i18n="aboutS1Kicker">The problem we kept seeing</p>
+          <h2 class="about-section-title" data-i18n="aboutS1Title">
+            Halloween decorations that looked fine in photos—and cheap in person.
+          </h2>
+          <div class="about-prose">
+            <p data-i18n="aboutS1P1">
+              We love October. We love a moody table and a candle that flickers just right. But year after year, the same thing happened: we’d buy Halloween decorations that looked exciting online, then unpack something light, hollow, and a little too shiny.
+            </p>
+            <p data-i18n="aboutS1P2">
+              Nothing wrong with fun plastic props for a party. But we wanted pieces that could sit on a mantel in daylight and still feel intentional—something closer to art than a prop.
+            </p>
+            <p data-i18n="aboutS1P3">
+              So we built our own path. ViviCeramics is centered on a team-owned factory—ceramics for Halloween decorations you’re proud to leave out when the lights come on.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Split: image left, copy right (EDJY “Starting from scratch” pattern) -->
+      <section class="about-split-wrap" aria-labelledby="about-s2-title">
+        <div class="about-split">
+          <div class="about-split-visual">
+            <img
+              src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=900&q=80&auto=format"
+              alt="Ceramic production at our team-owned facility"
+              width="900"
+              height="675"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="about-split-panel">
+            <p class="about-kicker" data-i18n="aboutS2Kicker">Our factory</p>
+            <h2 id="about-s2-title" class="about-section-title" data-i18n="aboutS2Title">Built where we control every step.</h2>
+            <div class="about-prose">
+              <p data-i18n="aboutS2P">
+                Everything here comes from our team’s own factory. We’re not juggling random workshops across time zones. Shaping, drying, firing, and glazing happen under one roof with the same crew, so if something looks off, we fix it before it ships. Still small batches—quality over volume—but the line is ours start to finish.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-strip about-strip--dark about-strip--bordered" aria-labelledby="about-s3-title">
+        <div class="about-strip-inner">
+          <p class="about-kicker" data-i18n="aboutS3Kicker">What we believe</p>
+          <h2 id="about-s3-title" class="about-section-title" data-i18n="aboutS3Title">
+            Quiet spooky. Real weight. Real glaze.
+          </h2>
+          <div class="about-prose">
+            <p data-i18n="aboutS3P1">
+              Our product idea is simple: Halloween decorations should feel grounded. We use stoneware ceramics so the piece has weight when you pick it up. We keep shapes believable and finishes soft—more harvest moon than neon scream.
+            </p>
+            <p data-i18n="aboutS3P2">
+              We’re not trying to fill a warehouse. We release in limited autumn runs because that’s how we can keep quality where we want it. If you’re building a vignette—entryway, shelf, or table—our hope is that one of our pieces becomes the object people lean in to look at.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-cta" aria-labelledby="about-cta-title">
+        <p class="about-kicker about-kicker--on-dark" data-i18n="aboutCtaKicker">Ready to dress the room?</p>
+        <h2 id="about-cta-title" class="about-cta-title" data-i18n="aboutCtaTitle">See this season’s ceramics.</h2>
+        <p class="about-cta-text" data-i18n="aboutCtaText">
+          Browse pumpkins and accents, pick what fits your space, and bring home Halloween decorations that still look right when the party ends.
+        </p>
+        <a class="btn-primary about-cta-btn" href="products/all.html" data-i18n="aboutCtaBtn">Shop all products</a>
+      </section>
     </main>
-    <footer class="site-footer"><p>© ViviCeramics</p></footer>
+
+    <footer class="site-footer">
+      <p data-i18n="footer">© ViviCeramics. All hallows reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
