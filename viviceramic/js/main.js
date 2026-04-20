@@ -75,10 +75,10 @@
         "Nothing wrong with fun plastic props for a party. But we wanted pieces that could sit on a mantel in daylight and still feel intentional—something closer to art than a prop.",
       aboutS1P3:
         "So we built our own path. ViviCeramics is centered on a team-owned factory—ceramics for Halloween decorations you’re proud to leave out when the lights come on.",
-      aboutS2Kicker: "Our factory",
-      aboutS2Title: "Built where we control every step.",
+      aboutS2Kicker: "Hand-carved pumpkins",
+      aboutS2Title: "Every rib and stem—carved by hand.",
       aboutS2P:
-        "Everything here comes from our team’s own factory. We’re not juggling random workshops across time zones. Shaping, drying, firing, and glazing happen under one roof with the same crew, so if something looks off, we fix it before it ships. Still small batches—quality over volume—but the line is ours start to finish.",
+        "Our ceramic pumpkins aren’t born from one giant mold press. The ribs, the stem, the silhouette—the carving work is done by hand, piece by piece. We trim and refine in small batches so each pumpkin can sit a little different, like the real thing. After a slow dry, we fire for strength, then glaze for depth. That’s how the ceramics feel warm and believable up close, not thin and plasticky.",
       aboutS3Kicker: "What we believe",
       aboutS3Title: "Quiet spooky. Real weight. Real glaze.",
       aboutS3P1:
@@ -163,10 +163,10 @@
         "派对用的塑料小道具没问题。但我们想要的是：白天放在壁炉上也顺眼、不开灯也像认真挑过的那一种——更像摆件，而不是拍完照就收起来的道具。",
       aboutS1P3:
         "于是我们走自己的路：ViviCeramics 以团队自有工厂为核心，做你愿意开灯后还愿意摆着的万圣装饰陶瓷。",
-      aboutS2Kicker: "自有工厂",
-      aboutS2Title: "从泥到釉，都在我们厂里完成。",
+      aboutS2Kicker: "手工雕刻",
+      aboutS2Title: "每一条棱、每一根茎，都是手刻出来的。",
       aboutS2P:
-        "在售的这些陶瓷，全来自我们团队自己的工厂。不是东一家西一家代工凑出来的货。塑形、干燥、烧制、上釉，都在同一支队伍、同一条产线里把关；不对劲就返工，不会让你收到一件我们自己都不想看第二眼的万圣装饰。仍然小批量——品质比走量重要——但整条线从头到尾都是我们的。",
+        "陶瓷南瓜不是一大块模具一压就完事。瓜身的棱、瓜蒂、整体轮廓——雕刻部分都是纯手工完成，一件一件修。我们坚持小批量修整，让每只南瓜都能有一点点自己的「脾气」，更像真的。慢干之后烧制定型，再上釉做出层次，所以拿在手里是扎实的陶瓷感，而不是薄薄一层亮壳。",
       aboutS3Kicker: "我们的理念",
       aboutS3Title: "含蓄的万圣气质：有分量、有釉面。",
       aboutS3P1:
