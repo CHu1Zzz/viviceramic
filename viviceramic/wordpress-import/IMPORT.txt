@@ -1,0 +1,74 @@
+HallowCeramics — WordPress 导入说明（viviceramic 静态站导出）
+============================================================
+
+一、本目录有什么
+----------------
+1) hallowceramics-wordpress-import.xml
+   - 标准 WordPress 扩展 RSS（WXR），可在后台「工具 → 导入 → WordPress」导入。
+   - 包含 2 个页面草稿：Home (imported layout)、About (imported layout)。
+   - 正文为「区块编辑器」里的 HTML 块（<!-- wp:html -->），内嵌整段布局 HTML。
+
+2) fragment-home-inner.html / fragment-about-inner.html
+   - 与 XML 中相同的 HTML 片段备份；也可手动粘贴到「自定义 HTML」区块。
+
+3) assets/
+   - styles.css、main.js 的副本；pumpkin_alpha.webm（若已复制）用于与首页视频路径一致。
+
+4) build_wxr.py
+   - 若你改了 ../index.html 或 ../about.html，在本目录执行：
+     python3 build_wxr.py
+   - 会重新生成 XML 与 fragment 文件。
+
+
+二、导入步骤（WordPress 后台）
+----------------------------
+1. 安装导入器：工具 → 导入 → WordPress → 运行安装程序（若未装）。
+2. 选择 hallowceramics-wordpress-import.xml 上传。
+3. 作者映射：把「admin」映射为你自己的管理员账号。
+4. 导入完成后，在「页面」里找到两篇草稿，检查预览后「发布」。
+5. 固定链接：设置 → 固定链接 → 选「文章名」并保存（避免 /?page_id= 形式）。
+
+
+三、链接与品牌（导入前已做替换）
+------------------------------
+- 站内链接已改为相对站点根路径示例：/、/about/、/shop/、/resources/、/login/
+- 请在 WP 中创建对应真实页面（或使用 WooCommerce 商店地址），并把 slug 改成与链接一致；
+  若 slug 不同，请批量替换页面 HTML 中的 href。
+- 文案中的品牌名已从 ViviCeramics 替换为 HallowCeramics；语言切换 localStorage 键改为 hallowceramics-lang。
+
+
+四、样式与脚本（必须单独接，否则只有裸 HTML）
+--------------------------------------------
+WXR 不会自动安装 CSS/JS。任选其一：
+
+A) 子主题（推荐）
+   - 将 assets/styles.css、assets/main.js 放入子主题目录；
+   - 在子主题 functions.php 里 wp_enqueue_style / wp_enqueue_script；
+   - 条件加载：仅当 is_page('home-imported') 等时为 true，避免全站冲突。
+
+B) Blocksy 自定义代码 / 附加 CSS
+   - 把 styles.css 内容贴进「外观 → 自定义 → 额外 CSS」（体积大时慎用）；
+   - main.js 用「页脚」脚本区块或 Code Snippets 插件仅在指定页面输出 <script>。
+
+首页视频
+   - 已将 src 指向：/wp-content/uploads/viviceramic/pumpkin_alpha.webm
+   - 请在媒体库上传同名文件，或放到该路径；也可改为你实际上传后的 URL。
+
+
+五、与主题页眉重复的问题
+------------------------
+导入的 HTML 里包含自己的 <header>。若 Blocksy 仍显示站点页眉，会出现双导航。
+处理方式（选一）：
+- 使用「画布」模板 / 隐藏页眉页脚的全宽页面模板；或
+- 从 fragment 中删除 <header>...</header> 一段，仅用主题导航（需自行改 HTML 后重新运行 build_wxr.py 或手改页面）。
+
+
+六、作者与站点 URL
+------------------
+XML 内 channel/link、guid 使用占位 https://example.com，不影响导入；导入后可在设置里改站点地址。
+若导入器提示文件过大，可在 php.ini 提高 upload_max_filesize / post_max_size，或用「WP All Import」等插件分步导入 fragment。
+
+
+七、不含的页面
+--------------
+未包含 products/*、resources.html、login.html 全文；需要时可按同样方式扩展 build_wxr.py。

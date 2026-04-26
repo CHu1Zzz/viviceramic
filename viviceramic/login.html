@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in — ViviCeramics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .auth-panel {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 2rem;
+        background: rgba(18, 10, 28, 0.75);
+        border: 1px solid rgba(244, 233, 216, 0.1);
+        border-radius: 20px;
+      }
+      .auth-panel label {
+        display: block;
+        font-size: 0.75rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--bone-muted);
+        margin-bottom: 0.35rem;
+      }
+      .auth-panel input {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        border: 1px solid rgba(244, 233, 216, 0.15);
+        background: rgba(10, 6, 18, 0.8);
+        color: var(--bone);
+        font-family: var(--font-body);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo-link" href="index.html"><span class="logo-mark" aria-hidden="true"></span>ViviCeramics</a>
+        <nav class="nav-main" aria-label="Primary">
+          <a href="products/all.html" data-i18n="navProducts">All Product</a>
+          <a href="resources.html" data-i18n="navResources">Resources</a>
+          <a href="about.html" data-i18n="navAbout">About us</a>
+          <a href="contact.html" data-i18n="navContact">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="icon-btn lang-btn" id="lang-toggle" aria-label="Switch language">EN</button>
+          <a href="products/all.html" class="icon-btn" aria-label="Cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M6 8h15l-1.5 9H7.5L6 8zm0 0L5 3H2" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="9" cy="20" r="1.5" fill="currentColor" stroke="none" />
+              <circle cx="18" cy="20" r="1.5" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+          <a href="login.html" class="icon-btn" aria-label="Account">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="12" cy="8" r="3.5" />
+              <path d="M5 20v-1c0-3 2.5-5.5 7-5.5s7 2.5 7 5.5v1" stroke-linecap="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1>Sign in</h1>
+      <p>Wire this form to your auth provider (Shopify customer accounts, Auth0, etc.).</p>
+      <div class="auth-panel">
+        <form action="#" method="post" onsubmit="return false;">
+          <label for="email">Email</label>
+          <input id="email" type="email" autocomplete="email" placeholder="you@example.com" />
+          <label for="password">Password</label>
+          <input id="password" type="password" autocomplete="current-password" />
+          <button type="button" class="btn-primary" style="width: 100%">Sign in to your account</button>
+        </form>
+      </div>
+      <p style="margin-top: 2rem"><a class="product-link" href="index.html">← Back to home</a></p>
+    </main>
+    <footer class="site-footer"><p data-i18n="footer">© ViviCeramics. All hallows reserved.</p></footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

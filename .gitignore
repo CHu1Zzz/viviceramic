@@ -1,0 +1,30 @@
+# Playwright
+.playwright-mcp/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS
+__MACOSX/
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Debug screenshots
+*.png
+!viviceramic/images/products/*.png
+
+# Claude Code settings (optional)
+.claude/
+
+# Windows thumbnails
+Thumbs.db
