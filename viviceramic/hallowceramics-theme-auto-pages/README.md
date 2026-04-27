@@ -11,7 +11,8 @@ When the theme is activated, it automatically creates these WordPress pages if t
 | Home | `home` | Rendered by `front-page.php` after being set as static homepage |
 | About Us | `about-us` | `page-about.php` |
 | Contact | `contact` | `page-contact.php` |
-| Resources | `resources` | `page-resources.php` |
+| Resources | `resources` | Redirects to `/resources/blog/` |
+| Blog | `resources/blog` | Rendered by WordPress posts page using `home.php` |
 | Shop | `shop` | `page-products.php` |
 | Pumpkins | `pumpkins` | `page-products-pumpkins.php` |
 | Others | `others` | `page-products-others.php` |
@@ -35,6 +36,32 @@ Settings -> Permalinks -> Save Changes
 ```
 
 This refreshes WordPress URL rules.
+
+## Blog Notes
+
+The theme creates a child `Blog` page under `Resources` and sets it as the WordPress posts page. The public blog URL is:
+
+```text
+/resources/blog/
+```
+
+Publish articles from:
+
+```text
+Posts -> Add New
+```
+
+Featured images become the journal card and article hero images. Categories and tags automatically use the matching archive template.
+
+## Blog SEO Meta
+
+When editing a WordPress post, use the **Hallow SEO Meta** box to set:
+
+- Meta title
+- Meta description
+- Canonical URL
+
+The theme outputs these values on single post pages. If a meta description is empty, the post excerpt is used instead.
 
 ## If You Delete Pages Later
 

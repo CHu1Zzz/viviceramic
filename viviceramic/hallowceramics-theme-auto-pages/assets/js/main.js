@@ -5,6 +5,7 @@
     en: {
       navProducts: "All Product",
       navResources: "Resources",
+      navBlog: "Blog",
       navAbout: "About us",
       navContact: "Contact",
       heroEyebrow: "Hand-fired ceramics · Limited Halloween drops",
@@ -126,6 +127,7 @@
     zh: {
       navProducts: "全部产品",
       navResources: "资源",
+      navBlog: "博客",
       navAbout: "关于我们",
       navContact: "联系我们",
       heroEyebrow: "手工陶瓷 · 万圣限量上新",

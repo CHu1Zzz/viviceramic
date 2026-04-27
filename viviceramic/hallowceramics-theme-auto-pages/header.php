@@ -20,7 +20,7 @@
         </a>
         <nav class="nav-main" aria-label="Primary">
           <a href="<?php echo esc_url(home_url('/shop/')); ?>" <?php echo is_page(array('shop', 'products', 'pumpkins', 'others')) ? 'class="is-active"' : ''; ?> data-i18n="navProducts">All Product</a>
-          <a href="<?php echo esc_url(home_url('/resources/')); ?>" <?php echo is_page('resources') ? 'class="is-active"' : ''; ?> data-i18n="navResources">Resources</a>
+          <a href="<?php echo esc_url(home_url('/resources/blog/')); ?>" <?php echo (is_page(array('resources', 'blog')) || is_home() || is_single() || is_category() || is_tag() || is_date() || is_search()) ? 'class="is-active"' : ''; ?> data-i18n="navResources">Resources</a>
           <a href="<?php echo esc_url(home_url('/about-us/')); ?>" <?php echo is_page(array('about', 'about-us')) ? 'class="is-active"' : ''; ?> data-i18n="navAbout">About us</a>
           <a href="<?php echo esc_url(home_url('/contact/')); ?>" <?php echo is_page('contact') ? 'class="is-active"' : ''; ?> data-i18n="navContact">Contact</a>
         </nav>
