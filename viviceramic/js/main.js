@@ -218,7 +218,7 @@
 
   /* —— Scroll reveal —— */
   function initReveal() {
-    const els = document.querySelectorAll(".product-card, .bs-product-card, .review-card, .cta-panel");
+    const els = document.querySelectorAll(".product-card, .bs-product-card, .review-card, .cta-panel, .contact-info-card, .contact-form-card");
     if (!els.length) return;
 
     const io = new IntersectionObserver(
