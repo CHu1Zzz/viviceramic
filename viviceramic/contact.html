@@ -8,12 +8,10 @@
       name="description"
       content="Contact ViviCeramics for wholesale inquiries, order questions, custom ceramic pumpkin requests, and studio support."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/cormorant-garamond/files/cormorant-garamond-latin-600-normal.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/dm-sans/files/dm-sans-latin-400-normal.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/dm-sans/files/dm-sans-latin-500-normal.woff2" />
+    <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="contact-body">
@@ -52,9 +50,9 @@
       <section class="contact-hero" aria-labelledby="contact-title">
         <div class="contact-hero-glow" aria-hidden="true"></div>
         <div class="contact-hero-copy">
-          <p class="contact-kicker" data-i18n="contactKicker">Contact us</p>
-          <h1 id="contact-title" class="contact-title" data-i18n="contactTitle">How to get in touch.</h1>
-          <p class="contact-intro" data-i18n="contactIntro">
+          <p class="contact-kicker" data-i18n="contactKicker" style="opacity:0;animation:fade-up 0.7s var(--ease-out-expo) 0.3s forwards">Contact us</p>
+          <h1 id="contact-title" class="contact-title" data-i18n="contactTitle" style="opacity:0;animation:fade-up 0.85s var(--ease-out-expo) 0.45s forwards">How to get in touch.</h1>
+          <p class="contact-intro" data-i18n="contactIntro" style="opacity:0;animation:fade-up 0.9s var(--ease-out-expo) 0.6s forwards">
             Questions about an order, wholesale ceramics, or a custom Halloween vignette? Send a note and we’ll reply with the same care we put into every carved pumpkin.
           </p>
         </div>
