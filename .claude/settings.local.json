@@ -62,7 +62,12 @@
       "Bash(git reset *)",
       "Bash(git ls-tree *)",
       "Bash(git push *)",
-      "Bash(awk '{print $4}')"
+      "Bash(awk '{print $4}')",
+      "Bash(git branch *)",
+      "mcp__MiniMaxImage__image_generation",
+      "Read(//d/MINIMAX-image/**)",
+      "Bash(mkdir -p \"d:/vivceramic/viviceramic/images/product_render/1\")",
+      "Bash(cp \"D:/MINIMAX-image/minimax_image_1777292243.jpg\" \"d:/vivceramic/viviceramic/images/product_render/1/\")"
     ],
     "additionalDirectories": [
       "d:\\vivceramic",

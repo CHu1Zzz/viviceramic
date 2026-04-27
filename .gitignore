@@ -19,9 +19,14 @@ __MACOSX/
 *.swp
 *~
 
+# Product and review images (negations must come before blocking patterns)
+!viviceramic/images/products/*.png
+!viviceramic/images/products/**/*.png
+!viviceramic/images/reviews/*.png
+!viviceramic/images/reviews/**/*.png
+
 # Debug screenshots
 *.png
-!viviceramic/images/products/*.png
 
 # Claude Code settings (optional)
 .claude/
