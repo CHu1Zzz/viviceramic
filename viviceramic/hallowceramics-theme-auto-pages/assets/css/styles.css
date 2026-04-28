@@ -1159,7 +1159,7 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 40%, rgba(232, 93, 4, 0.2) 0%, transparent 60%);
+  background: transparent;
   pointer-events: none;
 }
 
