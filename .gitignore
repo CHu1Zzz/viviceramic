@@ -1,20 +1,35 @@
-# Node modules (npm font packages leave this behind)
+# Node
+node_modules/
 viviceramic/assets/fonts/node_modules/
 viviceramic/hallowceramics-theme-auto-pages/assets/fonts/node_modules/
 
-# Product and review images
-viviceramic/images/products/*/
-viviceramic/images/reviews/
+# Build / release artifacts (zip the theme folder locally when uploading to WordPress)
+*.zip
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+# IDE / tooling (local only)
+.cursor/
+.idea/
+*.code-workspace
 
 # Playwright
 .playwright-mcp/
+
+# Logs
 *.log
+npm-debug.log*
 
 # Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.venv/
+venv/
 
 # macOS
 __MACOSX/
@@ -22,22 +37,26 @@ __MACOSX/
 .AppleDouble
 .LSOverride
 
+# Windows
+Thumbs.db
+
 # Temporary files
 *.tmp
 *.swp
 *~
 
-# Product and review images (negations must come before blocking patterns)
+# Claude Code (local settings; not for the remote repo)
+.claude/
+
+# Product and review images
+viviceramic/images/products/*/
+viviceramic/images/reviews/
+
+# Re-include committed product/review PNGs (negations before the broad *.png rule)
 !viviceramic/images/products/*.png
 !viviceramic/images/products/**/*.png
 !viviceramic/images/reviews/*.png
 !viviceramic/images/reviews/**/*.png
 
-# Debug screenshots
+# Debug / scratch screenshots (not site assets)
 *.png
-
-# Claude Code settings (optional)
-.claude/
-
-# Windows thumbnails
-Thumbs.db

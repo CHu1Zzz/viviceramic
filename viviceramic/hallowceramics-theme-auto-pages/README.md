@@ -19,7 +19,14 @@ When the theme is activated, it automatically creates these WordPress pages if t
 
 ## Upload
 
-Upload `hallowceramics-theme-auto-pages.zip` in WordPress:
+The theme ships as the `hallowceramics-theme-auto-pages` folder in this repo. **Create a zip locally** (exclude any `node_modules` under `assets/fonts` if present), then upload it in WordPress:
+
+```bash
+cd viviceramic && zip -r hallowceramics-theme-auto-pages.zip hallowceramics-theme-auto-pages \
+  -x "hallowceramics-theme-auto-pages/assets/fonts/node_modules/*"
+```
+
+In WordPress:
 
 ```text
 Appearance -> Themes -> Add New Theme -> Upload Theme
