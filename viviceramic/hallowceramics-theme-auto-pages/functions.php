@@ -40,16 +40,16 @@ function hallow_is_catalog_context(): bool
 
 add_action('wp_enqueue_scripts', function (): void {
     wp_enqueue_style(
-        'hallow-google-fonts',
-        'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap',
+        'hallow-fonts',
+        get_template_directory_uri() . '/assets/css/fonts.css',
         [],
-        null
+        hallow_asset_version('/assets/css/fonts.css')
     );
 
     wp_enqueue_style(
         'hallow-frontend',
         get_template_directory_uri() . '/assets/css/styles.css',
-        ['hallow-google-fonts'],
+        ['hallow-fonts'],
         hallow_asset_version('/assets/css/styles.css')
     );
 

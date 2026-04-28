@@ -1730,6 +1730,24 @@ img {
   margin: 0 0 0.85rem;
 }
 
+.contact-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6.8rem);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  color: var(--bone);
+  margin: 0 0 1.25rem;
+}
+
+.contact-intro {
+  max-width: 43rem;
+  color: var(--bone-muted);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.75;
+  margin: 0;
+}
+
 .contact-kicker--center {
   text-align: center;
 }
