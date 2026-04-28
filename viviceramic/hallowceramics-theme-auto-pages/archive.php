@@ -24,7 +24,7 @@ get_header();
     <?php if (have_posts()) : ?>
       <div class="blog-grid blog-grid--archive">
         <?php while (have_posts()) : the_post(); ?>
-          <article <?php post_class('blog-card'); ?>>
+          <article <?php post_class('blog-card blog-reveal'); ?>>
             <a class="blog-card-media" href="<?php the_permalink(); ?>" aria-label="<?php echo esc_attr(get_the_title()); ?>">
               <?php if (has_post_thumbnail()) : ?>
                 <?php the_post_thumbnail('medium_large', ['loading' => 'lazy']); ?>
@@ -57,7 +57,7 @@ get_header();
       <section class="blog-empty">
         <p class="blog-kicker">No notes yet</p>
         <h2>This archive is waiting for its first story.</h2>
-        <a class="btn-primary" href="<?php echo esc_url(home_url('/blog/')); ?>">Back to journal</a>
+        <a class="btn-primary" href="<?php echo esc_url(home_url('/resources/blog/')); ?>">Back to journal</a>
       </section>
     <?php endif; ?>
   </section>

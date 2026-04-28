@@ -72,6 +72,16 @@ add_action('wp_enqueue_scripts', function (): void {
             true
         );
     }
+
+    if (is_home() || is_single() || is_archive() || is_search()) {
+        wp_enqueue_script(
+            'hallow-blog-anim',
+            get_template_directory_uri() . '/assets/js/blog-anim.js',
+            ['hallow-main'],
+            hallow_asset_version('/assets/js/blog-anim.js'),
+            true
+        );
+    }
 });
 
 add_action('after_setup_theme', function (): void {
@@ -184,6 +194,9 @@ function hallow_render_seo_meta_box(WP_Post $post): void
     $meta_title = hallow_get_seo_meta((int) $post->ID, '_hallow_meta_title');
     $meta_description = hallow_get_seo_meta((int) $post->ID, '_hallow_meta_description');
     $canonical_url = hallow_get_seo_meta((int) $post->ID, '_hallow_canonical_url');
+    $intro_cta_url = hallow_get_seo_meta((int) $post->ID, '_hallow_intro_cta_url');
+    $end_cta_url = hallow_get_seo_meta((int) $post->ID, '_hallow_end_cta_url');
+    $learn_more_links = hallow_get_seo_meta((int) $post->ID, '_hallow_learn_more_links');
     ?>
     <p>
         <label for="hallow_meta_title"><strong>Meta title</strong></label><br />
@@ -222,6 +235,42 @@ function hallow_render_seo_meta_box(WP_Post $post): void
         />
         <br /><span class="description">Optional. Leave empty unless this post should point search engines to another canonical URL.</span>
     </p>
+    <hr />
+    <p>
+        <label for="hallow_intro_cta_url"><strong>Intro CTA URL</strong></label><br />
+        <input
+            type="url"
+            id="hallow_intro_cta_url"
+            name="hallow_intro_cta_url"
+            value="<?php echo esc_attr($intro_cta_url); ?>"
+            style="width:100%;max-width:760px;"
+            placeholder="<?php echo esc_url(home_url('/pumpkins/')); ?>"
+        />
+        <br /><span class="description">Optional. Button target for the top inline CTA card.</span>
+    </p>
+    <p>
+        <label for="hallow_end_cta_url"><strong>End CTA URL</strong></label><br />
+        <input
+            type="url"
+            id="hallow_end_cta_url"
+            name="hallow_end_cta_url"
+            value="<?php echo esc_attr($end_cta_url); ?>"
+            style="width:100%;max-width:760px;"
+            placeholder="<?php echo esc_url(home_url('/shop/')); ?>"
+        />
+        <br /><span class="description">Optional. Button target for the bottom inline CTA card.</span>
+    </p>
+    <p>
+        <label for="hallow_learn_more_links"><strong>Learn more links</strong></label><br />
+        <textarea
+            id="hallow_learn_more_links"
+            name="hallow_learn_more_links"
+            rows="5"
+            style="width:100%;max-width:760px;"
+            placeholder="Article Label | https://example.com/article&#10;Second Link | https://example.com/second"
+        ><?php echo esc_textarea($learn_more_links); ?></textarea>
+        <br /><span class="description">Optional. One link per line using: Title | URL. Leave empty to auto-show recent posts.</span>
+    </p>
     <?php
 }
 
@@ -242,13 +291,18 @@ add_action('save_post_post', function (int $post_id): void {
         '_hallow_meta_title' => 'hallow_meta_title',
         '_hallow_meta_description' => 'hallow_meta_description',
         '_hallow_canonical_url' => 'hallow_canonical_url',
+        '_hallow_intro_cta_url' => 'hallow_intro_cta_url',
+        '_hallow_end_cta_url' => 'hallow_end_cta_url',
+        '_hallow_learn_more_links' => 'hallow_learn_more_links',
     ];
 
     foreach ($fields as $meta_key => $field_name) {
         $value = isset($_POST[$field_name]) ? trim((string) wp_unslash($_POST[$field_name])) : '';
 
-        if ($meta_key === '_hallow_canonical_url') {
+        if ($meta_key === '_hallow_canonical_url' || $meta_key === '_hallow_intro_cta_url' || $meta_key === '_hallow_end_cta_url') {
             $value = esc_url_raw($value);
+        } elseif ($meta_key === '_hallow_learn_more_links') {
+            $value = sanitize_textarea_field($value);
         } else {
             $value = sanitize_text_field($value);
         }
