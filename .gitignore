@@ -1,3 +1,11 @@
+# Node modules (npm font packages leave this behind)
+viviceramic/assets/fonts/node_modules/
+viviceramic/hallowceramics-theme-auto-pages/assets/fonts/node_modules/
+
+# Product and review images
+viviceramic/images/products/*/
+viviceramic/images/reviews/
+
 # Playwright
 .playwright-mcp/
 *.log
