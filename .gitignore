@@ -60,3 +60,19 @@ viviceramic/images/reviews/
 
 # Debug / scratch screenshots (not site assets)
 *.png
+
+# Temporary / intermediate video files
+# (keep committed product videos - see negation below)
+pumpkin_alpha_new.webm
+pumpkin_alpha_nobg.webm
+pumpkin_nobg.mp4
+pumpkin_nobg.webm
+test_basic.mp4
+frame_check.jpg
+tools/
+*.mp4
+
+# Re-include committed product videos
+!viviceramic/images/products/*.mp4
+!viviceramic/images/products/**/*.mp4
+!pumpkin_alpha_new.webm
