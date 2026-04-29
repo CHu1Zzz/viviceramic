@@ -454,7 +454,7 @@ img {
   display: flex;
   align-items: center;
   /* Extra left inset: net +(1/15 − 1/18) = +1/90 viewport over base nav pad */
-  padding: 91px var(--nav-pad) 46px;
+  padding: 86px var(--nav-pad) 44px;
   padding-left: calc(var(--nav-pad) + (100vw / 90));
   overflow: hidden;
 }
