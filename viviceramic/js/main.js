@@ -326,7 +326,7 @@
 
     // Load product video texture
     const video = document.createElement('video');
-    video.src = "images/products/pumpkin-3d-demo.mp4";
+    video.src = "images/products/hero-pumpkin-new.mp4";
     video.loop = true;
     video.muted = true;
     video.playsInline = true;
