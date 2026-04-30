@@ -49,18 +49,13 @@ Thumbs.db
 # Claude Code (local settings; not for the remote repo)
 .claude/
 
-# Product and review images
-viviceramic/images/products/*/
-viviceramic/images/reviews/
-
-# Re-include committed product/review PNGs (negations before the broad *.png rule)
-!viviceramic/images/products/*.png
-!viviceramic/images/products/**/*.png
-!viviceramic/images/reviews/*.png
-!viviceramic/images/reviews/**/*.png
-
-# Debug / scratch screenshots (not site assets)
-*.png
+# Images in viviceramic/images/ - keep folder structure but ignore all image files
+viviceramic/images/*
+# Re-include subdirectories to keep folder structure
+!viviceramic/images/products/
+!viviceramic/images/reviews/
+!viviceramic/images/product_render/
+!viviceramic/images/**/.gitkeep
 
 # Temporary / intermediate video files
 # (keep committed product videos - see negation below)
