@@ -49,13 +49,11 @@ Thumbs.db
 # Claude Code (local settings; not for the remote repo)
 .claude/
 
-# Images in viviceramic/images/ - keep folder structure but ignore all image files
+# Images in viviceramic/images/ - ignore all files
 viviceramic/images/*
-# Re-include subdirectories to keep folder structure
-!viviceramic/images/products/
-!viviceramic/images/reviews/
-!viviceramic/images/product_render/
-!viviceramic/images/**/.gitkeep
+# Only re-include logo files (used in site header)
+!viviceramic/images/logo-icon.png
+!viviceramic/images/logo-text.png
 
 # Temporary / intermediate video files
 # (keep committed product videos - see negation below)
