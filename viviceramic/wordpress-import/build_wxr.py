@@ -14,8 +14,12 @@ REPLACEMENTS = [
     ('href="index.html"', 'href="/"'),
     ('href="about.html"', 'href="/about/"'),
     ('href="products/all.html"', 'href="/shop/"'),
+    ('href="resources/blog.html"', 'href="/resources/blog/"'),
     ('href="resources.html"', 'href="/resources/"'),
+    ('href="contact.html"', 'href="/contact/"'),
     ('href="login.html"', 'href="/login/"'),
+    ('src="images/logo-icon.png"', 'src="/wp-content/themes/hallowceramics-auto-pages/assets/images/logo-icon.png"'),
+    ('src="images/logo-text.png"', 'src="/wp-content/themes/hallowceramics-auto-pages/assets/images/logo-text.png"'),
     ('src="./pumpkin_alpha.webm"', 'src="/wp-content/uploads/viviceramic/pumpkin_alpha.webm"'),
     ('<link rel="stylesheet" href="css/styles.css" />', ""),
 ]

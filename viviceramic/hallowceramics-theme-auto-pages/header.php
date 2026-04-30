@@ -15,8 +15,8 @@
     <header class="site-header">
       <div class="header-inner">
         <a class="logo-link" href="<?php echo esc_url(home_url('/')); ?>" aria-label="HallowCeramics home">
-          <span class="logo-mark" aria-hidden="true"></span>
-          HallowCeramics
+          <img class="logo-icon" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo-icon.png'); ?>" alt="" />
+          <img class="logo-text" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo-text.png'); ?>" alt="HallowCeramics" />
         </a>
         <nav class="nav-main" aria-label="Primary">
           <a href="<?php echo esc_url(home_url('/shop/')); ?>" <?php echo is_page(array('shop', 'products', 'pumpkins', 'others')) ? 'class="is-active"' : ''; ?> data-i18n="navProducts">All Product</a>

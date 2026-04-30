@@ -49,24 +49,30 @@ Thumbs.db
 # Claude Code (local settings; not for the remote repo)
 .claude/
 
-# Images in viviceramic/images/ - ignore all files
-viviceramic/images/*
-# Only re-include logo files (used in site header)
+# Images — only track logo files needed by the theme and frontend
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.webp
+**/*.gif
+**/*.svg
+!viviceramic/hallowceramics-theme-auto-pages/assets/fonts/**/*.svg
+# Re-include logos (frontend + theme)
 !viviceramic/images/logo-icon.png
 !viviceramic/images/logo-text.png
+!viviceramic/hallowceramics-theme-auto-pages/assets/images/logo-icon.png
+!viviceramic/hallowceramics-theme-auto-pages/assets/images/logo-text.png
 
-# Temporary / intermediate video files
-# (keep committed product videos - see negation below)
-pumpkin_alpha_new.webm
-pumpkin_alpha_nobg.webm
-pumpkin_nobg.mp4
-pumpkin_nobg.webm
-test_basic.mp4
-frame_check.jpg
-tools/
-*.mp4
-
-# Re-include committed product videos
-!viviceramic/images/products/*.mp4
-!viviceramic/images/products/**/*.mp4
+# Videos — only track the homepage banner pumpkin and theme copy
+**/*.webm
+**/*.mp4
 !pumpkin_alpha_new.webm
+!viviceramic/hallowceramics-theme-auto-pages/assets/media/pumpkin_alpha.webm
+
+# Product / review images (local only, upload to WP media library directly)
+viviceramic/images/product_render/
+viviceramic/images/products/
+viviceramic/images/reviews/
+
+# Orphan vivceramic/ directory (legacy copy, not part of the project)
+vivceramic/

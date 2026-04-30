@@ -63,15 +63,7 @@ add_action('wp_enqueue_scripts', function (): void {
         true
     );
 
-    if (hallow_is_catalog_context()) {
-        wp_enqueue_script(
-            'hallow-catalog',
-            get_template_directory_uri() . '/assets/js/catalog-page.js',
-            ['hallow-main'],
-            hallow_asset_version('/assets/js/catalog-page.js'),
-            true
-        );
-    }
+    // catalog-page.js removed — product cards now rendered server-side via WooCommerce
 
     if (is_home() || is_single() || is_archive() || is_search()) {
         wp_enqueue_script(
@@ -156,6 +148,16 @@ function hallow_setup_default_pages(): void
 
     if ($blog_id > 0) {
         update_option('page_for_posts', $blog_id);
+    }
+
+    // Create WooCommerce product categories if they don't exist
+    if (taxonomy_exists('product_cat')) {
+        $categories = ['pumpkins' => 'Pumpkins', 'others' => 'Others'];
+        foreach ($categories as $slug => $name) {
+            if (! term_exists($name, 'product_cat')) {
+                wp_insert_term($name, 'product_cat', ['slug' => $slug]);
+            }
+        }
     }
 
     update_option('hallow_auto_pages_created', time());
