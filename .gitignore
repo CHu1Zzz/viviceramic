@@ -15,6 +15,7 @@ viviceramic/hallowceramics-theme-auto-pages/assets/fonts/node_modules/
 .cursor/
 .idea/
 *.code-workspace
+.vscode/
 
 # Playwright
 .playwright-mcp/

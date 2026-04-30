@@ -352,11 +352,9 @@ img {
 }
 
 .logo-mark {
-  width: 36px;
-  height: 36px;
-  border-radius: 50% 50% 45% 45% / 55% 55% 45% 45%;
-  background: radial-gradient(circle at 40% 35%, #ff9a3c, #c45c1a 60%, #6b2d0a);
-  box-shadow: 0 4px 12px rgba(232, 93, 4, 0.35);
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-main {
