@@ -85,13 +85,14 @@
     <header class="site-header">
       <div class="header-inner">
         <a class="logo-link" href="/" aria-label="HallowCeramics home">
-          <span class="logo-mark" aria-hidden="true"></span>
-          HallowCeramics
+          <img class="logo-icon" src="/wp-content/themes/hallowceramics-auto-pages/assets/images/logo-icon.png" alt="" />
+          <img class="logo-text" src="/wp-content/themes/hallowceramics-auto-pages/assets/images/logo-text.png" alt="HallowCeramics" />
         </a>
         <nav class="nav-main" aria-label="Primary">
           <a href="/shop/" data-i18n="navProducts">All Product</a>
-          <a href="/resources/" data-i18n="navResources">Resources</a>
+          <a href="resources/blog.html" data-i18n="navResources">Resources</a>
           <a href="/about/" data-i18n="navAbout">About us</a>
+          <a href="contact.html" data-i18n="navContact">Contact</a>
         </nav>
         <div class="header-actions">
           <button type="button" class="icon-btn lang-btn" id="lang-toggle" aria-label="Switch language">EN</button>
@@ -118,7 +119,7 @@
         <div class="hero-video-frame" aria-hidden="true">
           <video
             class="hero-gif-video"
-            src="/wp-content/uploads/viviceramic/pumpkin_alpha.webm"
+            src="./pumpkin_alpha_new.webm"
             width="800"
             height="800"
             autoplay
@@ -170,7 +171,7 @@
                     <a class="bs-img-link" href="/shop/">
                       <div class="bs-img-wrap">
                         <img
-                          src="https://images.unsplash.com/photo-1509557965877-b88c97052f0e?auto=format&amp;w=600&amp;h=600&amp;fit=crop&amp;q=80"
+                          src="images/product_render/1/ChatGPT Image 2026年4月27日 20_31_30.png"
                           alt=""
                           width="600"
                           height="600"
@@ -179,7 +180,7 @@
                         />
                       </div>
                     </a>
-                    <h3 class="bs-product-name" data-i18n="bs1Name">Hyper-real Classic Pumpkin</h3>
+                    <h3 class="bs-product-name" data-i18n="bs1Name">Weathered Slate Pumpkin</h3>
                     <p class="bs-price"><span data-i18n="bsFrom">From</span> <span class="bs-price-num">$189</span> <span class="bs-currency" data-i18n="bsCurrency">USD</span></p>
                     <div class="bs-actions">
                       <a class="bs-btn-cart" href="/shop/" data-i18n="bsAddCart">Add to cart</a>
@@ -192,7 +193,7 @@
                     <a class="bs-img-link" href="/shop/">
                       <div class="bs-img-wrap">
                         <img
-                          src="https://images.unsplash.com/photo-1606312619070-d48b4c652a48?auto=format&amp;w=600&amp;h=600&amp;fit=crop&amp;q=80"
+                          src="images/product_render/2/ChatGPT Image 2026年4月27日 20_34_59.png"
                           alt=""
                           width="600"
                           height="600"
@@ -201,7 +202,7 @@
                         />
                       </div>
                     </a>
-                    <h3 class="bs-product-name" data-i18n="bs2Name">Petite Pumpkin Trio</h3>
+                    <h3 class="bs-product-name" data-i18n="bs2Name">Arachnid Harvest Gourd</h3>
                     <p class="bs-price"><span data-i18n="bsFrom">From</span> <span class="bs-price-num">$129</span> <span class="bs-currency" data-i18n="bsCurrency">USD</span></p>
                     <div class="bs-actions">
                       <a class="bs-btn-cart" href="/shop/" data-i18n="bsAddCart">Add to cart</a>
@@ -214,7 +215,7 @@
                     <a class="bs-img-link" href="/shop/">
                       <div class="bs-img-wrap">
                         <img
-                          src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&amp;w=600&amp;h=600&amp;fit=crop&amp;q=80"
+                          src="images/product_render/3/ChatGPT Image 2026年4月28日 11_09_12.png"
                           alt=""
                           width="600"
                           height="600"
@@ -223,7 +224,7 @@
                         />
                       </div>
                     </a>
-                    <h3 class="bs-product-name" data-i18n="bs3Name">Taper Throne Candle Cup</h3>
+                    <h3 class="bs-product-name" data-i18n="bs3Name">Ashen Specter Pumpkin</h3>
                     <p class="bs-price"><span data-i18n="bsFrom">From</span> <span class="bs-price-num">$89</span> <span class="bs-currency" data-i18n="bsCurrency">USD</span></p>
                     <div class="bs-actions">
                       <a class="bs-btn-cart" href="/shop/" data-i18n="bsAddCart">Add to cart</a>
@@ -236,7 +237,7 @@
                     <a class="bs-img-link" href="/shop/">
                       <div class="bs-img-wrap">
                         <img
-                          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&amp;w=600&amp;h=600&amp;fit=crop&amp;q=80"
+                          src="images/product_render/4/ChatGPT Image 2026年4月28日 11_11_10.png"
                           alt=""
                           width="600"
                           height="600"
@@ -245,7 +246,7 @@
                         />
                       </div>
                     </a>
-                    <h3 class="bs-product-name" data-i18n="bs4Name">Heritage Stem Sculpt</h3>
+                    <h3 class="bs-product-name" data-i18n="bs4Name">Lucky Ladybug Gourd</h3>
                     <p class="bs-price"><span data-i18n="bsFrom">From</span> <span class="bs-price-num">$249</span> <span class="bs-currency" data-i18n="bsCurrency">USD</span></p>
                     <div class="bs-actions">
                       <a class="bs-btn-cart" href="/shop/" data-i18n="bsAddCart">Add to cart</a>
@@ -258,7 +259,7 @@
                     <a class="bs-img-link" href="/shop/">
                       <div class="bs-img-wrap">
                         <img
-                          src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;w=600&amp;h=600&amp;fit=crop&amp;q=80"
+                          src="images/product_render/5/ChatGPT Image 2026年4月28日 12_13_16.png"
                           alt=""
                           width="600"
                           height="600"
@@ -267,7 +268,7 @@
                         />
                       </div>
                     </a>
-                    <h3 class="bs-product-name" data-i18n="bs5Name">Ember Glaze Limited Run</h3>
+                    <h3 class="bs-product-name" data-i18n="bs5Name">Frosted Heirloom Gourd</h3>
                     <p class="bs-price"><span data-i18n="bsFrom">From</span> <span class="bs-price-num">$219</span> <span class="bs-currency" data-i18n="bsCurrency">USD</span></p>
                     <div class="bs-actions">
                       <a class="bs-btn-cart" href="/shop/" data-i18n="bsAddCart">Add to cart</a>
@@ -280,7 +281,7 @@
                     <a class="bs-img-link" href="/shop/">
                       <div class="bs-img-wrap">
                         <img
-                          src="https://images.unsplash.com/photo-1556228578-0d85b1a4d564?auto=format&amp;w=600&amp;h=600&amp;fit=crop&amp;q=80"
+                          src="images/product_render/6/ChatGPT Image 2026年4月28日 12_58_28.png"
                           alt=""
                           width="600"
                           height="600"
@@ -289,7 +290,7 @@
                         />
                       </div>
                     </a>
-                    <h3 class="bs-product-name" data-i18n="bs6Name">Patch Stems &amp; Minis Set</h3>
+                    <h3 class="bs-product-name" data-i18n="bs6Name">Hollow Glow Jack Lantern</h3>
                     <p class="bs-price"><span data-i18n="bsFrom">From</span> <span class="bs-price-num">$159</span> <span class="bs-currency" data-i18n="bsCurrency">USD</span></p>
                     <div class="bs-actions">
                       <a class="bs-btn-cart" href="/shop/" data-i18n="bsAddCart">Add to cart</a>
@@ -315,8 +316,8 @@
             <span class="product-badge" data-i18n="p1Badge">Hyper-real</span>
             <img
               class="product-placeholder"
-              src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&amp;q=75&amp;auto=format"
-              alt="Craftsperson refining ceramic pumpkin details by hand"
+              src="images/product_render/11/ChatGPT Image 2026年4月28日 15_56_08.png"
+              alt="Handcrafted ceramic pumpkin with realistic details"
               width="800"
               height="600"
               loading="lazy"
@@ -332,25 +333,25 @@
           </div>
         </article>
 
-        <article class="product-card product-card--reverse" data-reveal-delay="120">
-          <div class="product-visual">
-            <span class="product-badge" data-i18n="p2Badge">Set piece</span>
-            <img
-              class="product-placeholder"
-              src="https://images.unsplash.com/photo-1606312619070-d48b4c652a48?w=640&amp;q=75&amp;auto=format"
-              alt="Cozy candlelight and seasonal table setting"
-              width="800"
-              height="600"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
+        <article class="product-card" data-reveal-delay="120">
           <div class="product-body">
             <h3 data-i18n="p2Title">A trio of minis—or a candle throne—for the vignette.</h3>
             <p data-i18n="p2Body">
               Three petite pumpkins nest together like a whispered spell, or choose the taper holder: a low, moody pedestal that catches wax drips like ritual evidence.
             </p>
             <a class="product-link" href="/shop/" data-i18n="p2Link">Explore sets →</a>
+          </div>
+          <div class="product-visual">
+            <span class="product-badge" data-i18n="p2Badge">Set piece</span>
+            <img
+              class="product-placeholder"
+              src="images/product_render/11/ChatGPT Image 2026年4月29日 12_59_28.png"
+              alt="A trio of petite pumpkins with a candle throne"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </article>
       </section>
@@ -361,9 +362,9 @@
           <p class="section-sub" data-i18n="reviewsSub">Real rooms. Real light. Unreal ceramics.</p>
           <div class="review-grid">
             <article class="review-card" data-reveal-delay="0">
-              <button type="button" class="review-photo" data-lightbox data-full="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&amp;w=1400&amp;h=933&amp;fit=crop&amp;q=85" aria-label="Enlarge customer photo 1">
+              <button type="button" class="review-photo" data-lightbox data-full="images/reviews/ChatGPT Image 2026年4月28日 14_00_35.png" aria-label="Enlarge customer photo 1">
                 <img
-                  src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&amp;w=900&amp;h=600&amp;fit=crop&amp;q=80"
+                  src="images/reviews/ChatGPT Image 2026年4月28日 14_00_35.png"
                   alt="Warm minimalist living room interior"
                   width="900"
                   height="600"
@@ -383,8 +384,8 @@
               </p>
             </article>
             <article class="review-card" data-reveal-delay="100">
-              <button type="button" class="review-photo" data-lightbox data-full="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1400&q=85" aria-label="Enlarge customer photo 2">
-                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900&q=80" alt="Living room with curated furniture" width="900" height="600" loading="lazy" />
+              <button type="button" class="review-photo" data-lightbox data-full="images/reviews/ChatGPT Image 2026年4月28日 14_12_13.png" aria-label="Enlarge customer photo 2">
+                <img src="images/reviews/ChatGPT Image 2026年4月28日 14_12_13.png" alt="Living room with curated furniture" width="900" height="600" loading="lazy" />
               </button>
               <div class="review-head">
                 <img class="review-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&q=80" alt="" width="44" height="44" />
@@ -398,8 +399,8 @@
               </p>
             </article>
             <article class="review-card" data-reveal-delay="200">
-              <button type="button" class="review-photo" data-lightbox data-full="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=1400&q=85" aria-label="Enlarge customer photo 3">
-                <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=900&q=80" alt="Soft lamp light in a cozy interior" width="900" height="600" loading="lazy" />
+              <button type="button" class="review-photo" data-lightbox data-full="images/reviews/ChatGPT Image 2026年4月28日 14_17_38.png" aria-label="Enlarge customer photo 3">
+                <img src="images/reviews/ChatGPT Image 2026年4月28日 14_17_38.png" alt="Soft lamp light in a cozy interior" width="900" height="600" loading="lazy" />
               </button>
               <div class="review-head">
                 <img class="review-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&q=80" alt="" width="44" height="44" />
@@ -457,13 +458,14 @@
 <header class="site-header">
       <div class="header-inner">
         <a class="logo-link" href="/" aria-label="HallowCeramics home">
-          <span class="logo-mark" aria-hidden="true"></span>
-          HallowCeramics
+          <img class="logo-icon" src="/wp-content/themes/hallowceramics-auto-pages/assets/images/logo-icon.png" alt="" />
+          <img class="logo-text" src="/wp-content/themes/hallowceramics-auto-pages/assets/images/logo-text.png" alt="HallowCeramics" />
         </a>
         <nav class="nav-main" aria-label="Primary">
           <a href="/shop/" data-i18n="navProducts">All Product</a>
-          <a href="/resources/" data-i18n="navResources">Resources</a>
+          <a href="resources/blog.html" data-i18n="navResources">Resources</a>
           <a href="/about/" class="is-active" data-i18n="navAbout">About us</a>
+          <a href="contact.html" data-i18n="navContact">Contact</a>
         </nav>
         <div class="header-actions">
           <button type="button" class="icon-btn lang-btn" id="lang-toggle" aria-label="Switch language">EN</button>
@@ -490,7 +492,7 @@
         <figure class="about-hero-figure">
           <img
             class="about-hero-wide-img"
-            src="https://images.unsplash.com/photo-1509557965877-b88c97052f0e?w=2400&q=85&auto=format"
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2400 1200'%3E%3Crect fill='%23c45c1a' width='2400' height='1200'/%3E%3C/svg%3E"
             alt="Autumn pumpkins and ceramics — HallowCeramics"
             width="2400"
             height="1200"
@@ -531,8 +533,8 @@
         <div class="about-split">
           <div class="about-split-visual">
             <img
-              src="https://images.unsplash.com/photo-1493106641515-6b5631de4933?w=900&q=80&auto=format"
-              alt="Artisan at the bench hand-carving and refining ceramic pumpkins"
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 675'%3E%3Crect fill='%236b2d8a' width='900' height='675'/%3E%3C/svg%3E"
+              alt="Hand-carving detail on ceramic pumpkins"
               width="900"
               height="675"
               loading="lazy"
@@ -540,11 +542,11 @@
             />
           </div>
           <div class="about-split-panel">
-            <p class="about-kicker" data-i18n="aboutS2Kicker">At the bench</p>
-            <h2 id="about-s2-title" class="about-section-title" data-i18n="aboutS2Title">The hands that earn the double take.</h2>
+            <p class="about-kicker" data-i18n="aboutS2Kicker">Hand-carved pumpkins</p>
+            <h2 id="about-s2-title" class="about-section-title" data-i18n="aboutS2Title">Every rib and stem—carved by hand.</h2>
             <div class="about-prose">
               <p data-i18n="aboutS2P">
-                Hyper-real isn’t a factory preset—it’s someone leaning over the clay, carving ribs and stem until the silhouette reads true in daylight, then checking again after the fire so the glaze still feels soft and alive. We treat each pumpkin like a small commission: it doesn’t ship until we’d be proud to set it on our own mantel. That stubborn care—more than any single tool—is what turns ceramic into a piece people lean in to study, not just glance at.
+                Our ceramic pumpkins aren’t born from one giant mold press. The ribs, the stem, the silhouette—the carving work is done by hand, piece by piece. We trim and refine in small batches so each pumpkin can sit a little different, like the real thing. After a slow dry, we fire for strength, then glaze for depth. That’s how the ceramics feel warm and believable up close, not thin and plasticky.
               </p>
             </div>
           </div>
