@@ -351,10 +351,17 @@ img {
   color: var(--ember);
 }
 
-.logo-mark {
-  height: 40px;
+.logo-icon {
+  height: 36px;
   width: auto;
   object-fit: contain;
+}
+
+.logo-text {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  margin-left: 1px;
 }
 
 .nav-main {
