@@ -74,6 +74,16 @@ add_action('wp_enqueue_scripts', function (): void {
             true
         );
     }
+
+    if (is_product()) {
+        wp_enqueue_script(
+            'hallow-product-detail',
+            get_template_directory_uri() . '/assets/js/product-detail.js',
+            ['hallow-main'],
+            hallow_asset_version('/assets/js/product-detail.js'),
+            true
+        );
+    }
 });
 
 add_action('after_setup_theme', function (): void {
@@ -156,6 +166,27 @@ function hallow_setup_default_pages(): void
         foreach ($categories as $slug => $name) {
             if (! term_exists($name, 'product_cat')) {
                 wp_insert_term($name, 'product_cat', ['slug' => $slug]);
+            }
+        }
+    }
+
+    // Register WooCommerce product attributes used by single-product template
+    if (function_exists('wc_create_attribute')) {
+        $attributes = [
+            'material' => 'Material',
+            'finish'   => 'Finish',
+            'care'     => 'Care',
+            'use'      => 'Use',
+        ];
+        foreach ($attributes as $slug => $name) {
+            if (! wc_attribute_taxonomy_id_by_name($slug)) {
+                wc_create_attribute([
+                    'name'         => $name,
+                    'slug'         => $slug,
+                    'type'         => 'select',
+                    'order_by'     => 'menu_order',
+                    'has_archives' => false,
+                ]);
             }
         }
     }

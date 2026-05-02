@@ -49,20 +49,20 @@
     }
     return (
       '<article class="pl-card">' +
-      '<div class="pl-card-visual">' +
+      '<a class="pl-card-visual" href="../product-detail-reference.html">' +
       saleBadge +
       '<img src="' +
       esc(p.img) +
       '" alt="" width="600" height="600" loading="lazy" decoding="async" />' +
-      "</div>" +
+      '</a>' +
       '<div class="pl-card-body">' +
       '<h3 class="pl-card-title">' +
       esc(p.name) +
-      "</h3>" +
+      '</h3>' +
       priceLine +
       '<div class="pl-card-actions">' +
       '<button type="button" class="pl-btn pl-btn--primary" data-i18n="catalogAddCart">Add to cart</button>' +
-      '<a class="pl-btn pl-btn--secondary" href="../index.html#top" data-i18n="catalogLearn">Learn more</a>' +
+      '<a class="pl-btn pl-btn--secondary" href="../product-detail-reference.html" data-i18n="catalogLearn">Learn more</a>' +
       "</div>" +
       "</div>" +
       "</article>"

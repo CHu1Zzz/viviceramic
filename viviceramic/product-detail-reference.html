@@ -130,25 +130,39 @@
   .thumbnail-btn img { width: 100%; height: 100%; object-fit: cover; }
 
   /* --- Lightbox --- */
-  .lightbox-overlay {
-    position: fixed; inset: 0; z-index: 999;
+  .lightbox {
+    position: fixed; inset: 0; z-index: 11000;
     background: rgba(10,6,18,0.92); backdrop-filter: blur(8px);
     display: flex; align-items: center; justify-content: center;
-    cursor: zoom-out; animation: fade-in 0.25s;
+    opacity: 0; visibility: hidden;
+    cursor: zoom-out;
+    transition: opacity 0.35s, visibility 0.35s;
   }
-  .lightbox-overlay img {
-    max-width: 90vw; max-height: 85vh; border-radius: 10px;
+
+  .lightbox.is-open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .lightbox img {
+    max-width: min(92vw, 1200px); max-height: 88vh; border-radius: 12px;
     border: 1px solid rgba(244,233,216,0.12);
-    cursor: default; animation: fade-up 0.3s var(--ease-out-expo);
+    transform: scale(0.95); cursor: default;
+    transition: transform 0.4s var(--ease-out-expo);
   }
+
+  .lightbox.is-open img {
+    transform: scale(1);
+  }
+
   .lightbox-close {
-    position: absolute; top: 1.5rem; right: 2rem;
+    position: absolute; top: 1.5rem; right: 1.5rem;
     font-size: 2rem; color: var(--bone-muted); cursor: pointer;
     width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;
     border-radius: 50%; border: 1px solid rgba(244,233,216,0.15);
-    background: rgba(10,6,18,0.6); transition: color 0.2s, border-color 0.2s;
+    background: rgba(10,6,18,0.6); transition: background 0.25s;
   }
-  .lightbox-close:hover { color: var(--bone); border-color: var(--ember); }
+  .lightbox-close:hover { background: rgba(232, 93, 4, 0.35); }
 
   /* --- Product Info --- */
   .product-info { display: flex; flex-direction: column; gap: 1.25rem; }
@@ -368,15 +382,15 @@
 
     <!-- LEFT: Gallery -->
     <div class="product-gallery">
-      <div class="main-image-wrap" id="mainImageWrap" onclick="openLightbox()" role="button" tabindex="0" aria-label="Enlarge product image">
+      <div class="main-image-wrap" id="mainImageWrap" onclick="hallowOpenLightbox()" role="button" tabindex="0" aria-label="Enlarge product image">
         <span class="main-image-badge">New</span>
         <img id="mainImage" src="../images/product_render/1/ChatGPT Image 2026年4月27日 20_31_30.png" alt="Classic Rib Pumpkin — hand-carved ceramic" />
       </div>
       <div class="thumbnail-row">
-        <button class="thumbnail-btn active" onclick="switchImage(0)" aria-label="View image 1">
+        <button class="thumbnail-btn active" onclick="hallowSwitchImage(0)" aria-label="View image 1">
           <img src="../images/product_render/1/ChatGPT Image 2026年4月27日 20_31_30.png" alt="" loading="lazy" />
         </button>
-        <button class="thumbnail-btn" onclick="switchImage(1)" aria-label="View image 2">
+        <button class="thumbnail-btn" onclick="hallowSwitchImage(1)" aria-label="View image 2">
           <img src="../images/product_render/1/ChatGPT Image 2026年4月29日 13_45_21.png" alt="" loading="lazy" />
         </button>
       </div>
@@ -423,9 +437,9 @@
       <div class="quantity-row">
         <span class="qty-label">Quantity</span>
         <div class="quantity-selector">
-          <button class="qty-btn" onclick="changeQty(-1)" aria-label="Decrease quantity">−</button>
+          <button class="qty-btn" onclick="hallowChangeQty(-1)" aria-label="Decrease quantity">−</button>
           <input class="qty-input" type="number" id="qtyInput" value="1" min="1" max="25" readonly />
-          <button class="qty-btn" onclick="changeQty(1)" aria-label="Increase quantity">+</button>
+          <button class="qty-btn" onclick="hallowChangeQty(1)" aria-label="Increase quantity">+</button>
         </div>
       </div>
 
@@ -457,8 +471,8 @@
   <!-- ===== TABS ===== -->
   <div class="product-tabs-section">
     <div class="product-tabs" role="tablist">
-      <button class="product-tab-btn active" role="tab" onclick="switchTab(0)" id="tab-btn-0" aria-selected="true">Details</button>
-      <button class="product-tab-btn" role="tab" onclick="switchTab(1)" id="tab-btn-1" aria-selected="false">Shipping</button>
+      <button class="product-tab-btn active" role="tab" onclick="hallowSwitchTab(0)" id="tab-btn-0" aria-selected="true">Details</button>
+      <button class="product-tab-btn" role="tab" onclick="hallowSwitchTab(1)" id="tab-btn-1" aria-selected="false">Shipping</button>
     </div>
 
     <!-- Details panel -->
@@ -549,59 +563,20 @@
 </footer>
 
 <!-- ==================== LIGHTBOX ==================== -->
-<div class="lightbox-overlay" id="lightbox" style="display:none" onclick="closeLightbox()" role="dialog" aria-modal="true" aria-label="Enlarged product image">
-  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox">&times;</button>
-  <img id="lightboxImage" src="" alt="" />
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+  <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close">×</button>
+  <img id="lightbox-img" src="" alt="" />
 </div>
 
 <!-- ==================== SCRIPTS ==================== -->
+<script src="js/product-detail.js"></script>
 <script>
-  const images = [
+  // Gallery image paths for the reference page
+  window.__hallowProductImages = [
     "../images/product_render/1/ChatGPT Image 2026年4月27日 20_31_30.png",
     "../images/product_render/1/ChatGPT Image 2026年4月29日 13_45_21.png"
   ];
-  let currentIdx = 0;
-
-  function switchImage(idx) {
-    currentIdx = idx;
-    document.getElementById("mainImage").src = images[idx];
-    document.querySelectorAll(".thumbnail-btn").forEach((btn, i) => {
-      btn.classList.toggle("active", i === idx);
-    });
-  }
-
-  function changeQty(delta) {
-    const input = document.getElementById("qtyInput");
-    let val = parseInt(input.value) + delta;
-    if (val < 1) val = 1;
-    if (val > 25) val = 25;
-    input.value = val;
-  }
-
-  function openLightbox() {
-    document.getElementById("lightboxImage").src = images[currentIdx];
-    document.getElementById("lightbox").style.display = "flex";
-    document.body.style.overflow = "hidden";
-  }
-
-  function closeLightbox() {
-    document.getElementById("lightbox").style.display = "none";
-    document.body.style.overflow = "";
-  }
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeLightbox();
-  });
-
-  function switchTab(idx) {
-    document.querySelectorAll(".product-tab-btn").forEach((btn, i) => {
-      btn.classList.toggle("active", i === idx);
-      btn.setAttribute("aria-selected", i === idx);
-    });
-    document.querySelectorAll(".product-tab-panel").forEach((panel, i) => {
-      panel.classList.toggle("active", i === idx);
-    });
-  }
+  window.__hallowProductMaxQty = 25;
 </script>
 
 </body>
