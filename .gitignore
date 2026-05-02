@@ -49,6 +49,9 @@ Thumbs.db
 # Claude Code (local settings; not for the remote repo)
 .claude/
 
+# Qoder (local skills and config; not for the remote repo)
+.qoder/
+
 # Images — only track logo files needed by the theme and frontend
 **/*.png
 **/*.jpg
