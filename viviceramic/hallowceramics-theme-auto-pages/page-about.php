@@ -75,19 +75,32 @@ get_header();
         </div>
       </section>
 
-      <section class="about-strip about-strip--dark about-strip--bordered" aria-labelledby="about-s3-title">
-        <div class="about-strip-inner">
-          <p class="about-kicker" data-i18n="aboutS3Kicker">What we believe</p>
-          <h2 id="about-s3-title" class="about-section-title" data-i18n="aboutS3Title">
-            Quiet spooky. Real weight. Real glaze.
-          </h2>
-          <div class="about-prose">
-            <p data-i18n="aboutS3P1">
-              Our product idea is simple: Halloween decorations should feel grounded. We use stoneware ceramics so the piece has weight when you pick it up. We keep shapes believable and finishes soft—more harvest moon than neon scream.
-            </p>
-            <p data-i18n="aboutS3P2">
-              We’re not trying to fill a warehouse. We release in limited autumn runs because that’s how we can keep quality where we want it. If you’re building a vignette—entryway, shelf, or table—our hope is that one of our pieces becomes the object people lean in to look at.
-            </p>
+      <!-- Split: text left, image right (reverse of the above) -->
+      <section class="about-split-wrap" aria-labelledby="about-s3-title">
+        <div class="about-split about-split--reverse">
+          <div class="about-split-panel">
+            <p class="about-kicker" data-i18n="aboutS3Kicker">What we believe</p>
+            <h2 id="about-s3-title" class="about-section-title" data-i18n="aboutS3Title">
+              Quiet spooky. Real weight. Real glaze.
+            </h2>
+            <div class="about-prose">
+              <p data-i18n="aboutS3P1">
+                Our product idea is simple: Halloween decorations should feel grounded. We use stoneware ceramics so the piece has weight when you pick it up. We keep shapes believable and finishes soft—more harvest moon than neon scream.
+              </p>
+              <p data-i18n="aboutS3P2">
+                We’re not trying to fill a warehouse. We release in limited autumn runs because that’s how we can keep quality where we want it. If you’re building a vignette—entryway, shelf, or table—our hope is that one of our pieces becomes the object people lean in to look at.
+              </p>
+            </div>
+          </div>
+          <div class="about-split-visual">
+            <img
+              src="https://images.unsplash.com/photo-1606611013016-3e88b7a4113a?w=900&q=80&auto=format"
+              alt="Close-up of stoneware ceramic pumpkin glaze and texture"
+              width="900"
+              height="675"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
       </section>

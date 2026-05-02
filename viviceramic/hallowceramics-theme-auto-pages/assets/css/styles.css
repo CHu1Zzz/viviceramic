@@ -1647,6 +1647,19 @@ img {
   color: var(--bone);
 }
 
+/* -- Reverse split: image right, text left -- */
+.about-split--reverse .about-split-visual {
+  order: 2;
+  border-radius: 0 16px 16px 0;
+}
+
+.about-split--reverse .about-split-panel {
+  order: 1;
+  border-radius: 16px 0 0 16px;
+  border-left: 1px solid rgba(244, 233, 216, 0.1);
+  border-right: none;
+}
+
 .about-cta {
   text-align: center;
   padding: clamp(3.5rem, 8vw, 5rem) var(--nav-pad) clamp(4rem, 9vw, 5.5rem);
@@ -2038,6 +2051,17 @@ img {
   }
 
   .about-split-panel {
+    border-radius: 0 0 16px 16px;
+    border: 1px solid rgba(244, 233, 216, 0.1);
+    border-top: none;
+  }
+
+  .about-split--reverse .about-split-visual {
+    order: 0;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .about-split--reverse .about-split-panel {
     border-radius: 0 0 16px 16px;
     border: 1px solid rgba(244, 233, 216, 0.1);
     border-top: none;
