@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Classic Rib Pumpkin — HallowCeramics</title>
+<meta name="description" content="Hand-carved ceramic pumpkin with authentic ribbing and natural stem. Limited autumn run." />
+<link rel="stylesheet" href="css/fonts.css" />
+<style>
+  /* ===== Design Tokens ===== */
+  :root {
+    --void: #0a0612;
+    --ink: #120a1a;
+    --ember: #e85d04;
+    --ember-dim: #bc4a02;
+    --toxic: #7cb518;
+    --toxic-dim: #5a8a12;
+    --bone: #f4e9d8;
+    --bone-muted: #c9b8a4;
+    --violet: #6b2d8a;
+    --glass: rgba(18, 10, 28, 0.72);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body: "DM Sans", system-ui, -apple-system, sans-serif;
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--bone);
+    background: var(--void);
+    overflow-x: hidden;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; height: auto; display: block; }
+
+  /* ===== Keyframes ===== */
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  /* ===== Site Header ===== */
+  .site-header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(10, 6, 18, 0.88);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(244, 233, 216, 0.06);
+  }
+  .header-inner {
+    max-width: 1340px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr auto 1fr;
+    align-items: center; height: 72px; gap: 1rem;
+    padding: 0 clamp(1rem, 3vw, 2.5rem);
+  }
+  .logo-link {
+    justify-self: start; display: flex; align-items: center; gap: 0.5rem;
+    font-family: var(--font-display); font-size: 1.35rem; font-weight: 600;
+    letter-spacing: 0.04em; color: var(--bone);
+    transition: color 0.25s;
+  }
+  .logo-link:hover { color: var(--ember); }
+  .logo-mark {
+    width: 36px; height: 36px; border-radius: 50% 50% 45% 45% / 55% 55% 45% 45%;
+    background: radial-gradient(circle at 40% 35%, #ff9a3c, #c45c1a 60%, #6b2d0a);
+    box-shadow: 0 4px 12px rgba(232, 93, 4, 0.35);
+  }
+  .nav-main { justify-self: center; display: flex; align-items: center; gap: clamp(1rem, 2.5vw, 2.5rem); }
+  .nav-main a {
+    font-size: 0.8rem; font-weight: 500; letter-spacing: 0.11em;
+    text-transform: uppercase; color: var(--bone-muted); transition: color 0.2s;
+  }
+  .nav-main a:hover, .nav-main a.is-active { color: var(--ember); }
+  .header-actions { justify-self: end; display: flex; align-items: center; gap: 0.75rem; }
+  .icon-btn {
+    width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; color: var(--bone-muted); transition: color 0.2s, background 0.2s;
+  }
+  .icon-btn:hover { color: var(--ember); background: rgba(232,93,4,0.08); }
+  .icon-btn svg { width: 20px; height: 20px; }
+
+  /* ===== Product Detail Layout ===== */
+  .product-detail {
+    max-width: 1340px; margin: 0 auto;
+    padding: 2rem clamp(1rem, 3vw, 2.5rem) 4rem;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 5vw, 4rem); align-items: start;
+    animation: fade-up 0.7s var(--ease-out-expo);
+  }
+
+  /* --- Gallery --- */
+  .product-gallery { position: sticky; top: 92px; }
+  .main-image-wrap {
+    position: relative; border-radius: 14px; overflow: hidden;
+    border: 1px solid rgba(244, 233, 216, 0.1);
+    background: radial-gradient(ellipse 80% 70% at 50% 45%, rgba(232,93,4,0.18), rgba(107,45,138,0.1) 45%, var(--void) 100%);
+    cursor: zoom-in; aspect-ratio: 1;
+    transition: border-color 0.25s;
+  }
+  .main-image-wrap:hover { border-color: rgba(232,93,4,0.3); }
+  .main-image-wrap img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.45s var(--ease-out-expo);
+  }
+  .main-image-wrap:hover img { transform: scale(1.03); }
+  .main-image-badge {
+    position: absolute; top: 1rem; right: 1rem; z-index: 2;
+    padding: 0.35rem 0.65rem; font-size: 0.65rem; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--void); background: var(--ember); border-radius: 4px;
+  }
+  .thumbnail-row {
+    display: flex; gap: 0.75rem; margin-top: 1rem;
+  }
+  .thumbnail-btn {
+    width: 72px; height: 72px; border-radius: 8px; overflow: hidden;
+    border: 2px solid transparent; cursor: pointer; padding: 0;
+    background: rgba(18,10,26,0.7);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .thumbnail-btn:hover { border-color: rgba(232,93,4,0.4); }
+  .thumbnail-btn.active { border-color: var(--ember); box-shadow: 0 0 16px rgba(232,93,4,0.25); }
+  .thumbnail-btn img { width: 100%; height: 100%; object-fit: cover; }
+
+  /* --- Lightbox --- */
+  .lightbox-overlay {
+    position: fixed; inset: 0; z-index: 999;
+    background: rgba(10,6,18,0.92); backdrop-filter: blur(8px);
+    display: flex; align-items: center; justify-content: center;
+    cursor: zoom-out; animation: fade-in 0.25s;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw; max-height: 85vh; border-radius: 10px;
+    border: 1px solid rgba(244,233,216,0.12);
+    cursor: default; animation: fade-up 0.3s var(--ease-out-expo);
+  }
+  .lightbox-close {
+    position: absolute; top: 1.5rem; right: 2rem;
+    font-size: 2rem; color: var(--bone-muted); cursor: pointer;
+    width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; border: 1px solid rgba(244,233,216,0.15);
+    background: rgba(10,6,18,0.6); transition: color 0.2s, border-color 0.2s;
+  }
+  .lightbox-close:hover { color: var(--bone); border-color: var(--ember); }
+
+  /* --- Product Info --- */
+  .product-info { display: flex; flex-direction: column; gap: 1.25rem; }
+  .product-category {
+    display: inline-flex; align-items: center; gap: 0.4rem; align-self: flex-start;
+    font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--toxic);
+  }
+  .product-category::before {
+    content: ""; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--toxic); box-shadow: 0 0 8px rgba(124,181,24,0.5);
+  }
+  .product-name {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 600; line-height: 1.2;
+    color: var(--bone); letter-spacing: 0.02em;
+  }
+
+  .product-price-row { display: flex; align-items: baseline; gap: 0.65rem; }
+  .product-price {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
+    font-weight: 600; color: var(--ember);
+  }
+  .product-price-was {
+    font-size: 1.1rem; color: var(--bone-muted);
+    text-decoration: line-through; opacity: 0.6;
+  }
+  .divider { height: 1px; background: rgba(244,233,216,0.08); border: none; }
+  .product-short-desc { font-size: 0.95rem; color: var(--bone-muted); line-height: 1.7; }
+  .product-meta-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;
+  }
+  .product-meta-item {
+    text-align: center; padding: 0.85rem 0.5rem;
+    background: rgba(18,10,26,0.6); border: 1px solid rgba(244,233,216,0.07);
+    border-radius: 8px;
+  }
+  .product-meta-label { font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--bone-muted); margin-bottom: 0.3rem; }
+  .product-meta-value { font-size: 0.85rem; font-weight: 600; color: var(--bone); }
+
+  /* --- Quantity + Actions --- */
+  .quantity-row { display: flex; align-items: center; gap: 1rem; }
+  .qty-label { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bone-muted); }
+  .quantity-selector {
+    display: flex; align-items: center; border: 1px solid rgba(244,233,216,0.2); border-radius: 8px; overflow: hidden;
+  }
+  .qty-btn {
+    width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
+    background: rgba(18,10,26,0.8); color: var(--bone-muted); border: none;
+    font-size: 1.1rem; cursor: pointer; transition: color 0.2s, background 0.2s;
+  }
+  .qty-btn:hover { color: var(--ember); background: rgba(232,93,4,0.1); }
+  .qty-input {
+    width: 52px; height: 40px; text-align: center;
+    font-family: var(--font-body); font-size: 0.9rem; font-weight: 600;
+    color: var(--bone); background: transparent; border: none;
+    border-left: 1px solid rgba(244,233,216,0.12);
+    border-right: 1px solid rgba(244,233,216,0.12);
+  }
+  .qty-input:focus { outline: none; }
+
+  .product-actions { display: flex; flex-direction: column; gap: 0.65rem; }
+  .btn-add-cart {
+    display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+    width: 100%; padding: 1rem 1.5rem;
+    font-family: var(--font-body); font-size: 0.82rem; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--void); background: linear-gradient(135deg, var(--ember), var(--ember-dim));
+    border: none; border-radius: 999px; cursor: pointer;
+    box-shadow: 0 8px 32px rgba(232,93,4,0.3);
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .btn-add-cart:hover { transform: translateY(-2px); box-shadow: 0 14px 40px rgba(232,93,4,0.4); }
+  .btn-add-cart svg { width: 18px; height: 18px; }
+
+  .btn-buy-now {
+    width: 100%; padding: 0.9rem 1.5rem;
+    font-family: var(--font-body); font-size: 0.8rem; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase; text-align: center;
+    color: var(--bone-muted); background: transparent;
+    border: 1px solid rgba(244,233,216,0.2); border-radius: 999px;
+    cursor: pointer; transition: border-color 0.2s, color 0.2s;
+  }
+  .btn-buy-now:hover { border-color: var(--toxic); color: var(--bone); }
+
+  .shipping-note {
+    display: flex; align-items: center; gap: 0.5rem;
+    font-size: 0.78rem; color: var(--bone-muted);
+  }
+  .shipping-note svg { width: 16px; height: 16px; color: var(--toxic); flex-shrink: 0; }
+
+  /* ===== Tabs ===== */
+  .product-tabs-section {
+    max-width: 1340px; margin: 0 auto;
+    padding: 0 clamp(1rem, 3vw, 2.5rem) 3rem;
+  }
+  .product-tabs {
+    display: flex; gap: 0; border-bottom: 1px solid rgba(244,233,216,0.08);
+  }
+  .product-tab-btn {
+    padding: 1rem 1.5rem; font-family: var(--font-body);
+    font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--bone-muted);
+    background: none; border: none; border-bottom: 2px solid transparent;
+    cursor: pointer; transition: color 0.2s, border-color 0.2s;
+  }
+  .product-tab-btn:hover { color: var(--bone); }
+  .product-tab-btn.active { color: var(--ember); border-bottom-color: var(--ember); }
+  .product-tab-panel { display: none; padding: 2rem 0; animation: fade-up 0.35s var(--ease-out-expo); }
+  .product-tab-panel.active { display: block; }
+  .tab-body { font-size: 0.92rem; color: var(--bone-muted); line-height: 1.8; max-width: 780px; }
+  .tab-body h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; color: var(--bone); margin: 1.5rem 0 0.65rem; }
+  .tab-body ul { padding-left: 1.25rem; }
+  .tab-body li { margin-bottom: 0.4rem; }
+  .spec-table { width: 100%; max-width: 500px; border-collapse: collapse; }
+  .spec-table td { padding: 0.65rem 0; border-bottom: 1px solid rgba(244,233,216,0.06); font-size: 0.85rem; }
+  .spec-table td:first-child { color: var(--bone-muted); width: 130px; }
+  .spec-table td:last-child { color: var(--bone); font-weight: 500; }
+
+
+
+  /* ===== You May Also Like ===== */
+  .related-section {
+    max-width: 1340px; margin: 0 auto;
+    padding: 2rem clamp(1rem, 3vw, 2.5rem) 5rem;
+  }
+  .related-section h2 {
+    font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2rem);
+    font-weight: 600; color: var(--bone); margin-bottom: 1.5rem;
+  }
+  .related-scroll {
+    display: flex; gap: 1.25rem; overflow-x: auto;
+    padding-bottom: 0.5rem; scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .related-scroll::-webkit-scrollbar { height: 4px; }
+  .related-scroll::-webkit-scrollbar-track { background: rgba(244,233,216,0.04); border-radius: 2px; }
+  .related-scroll::-webkit-scrollbar-thumb { background: rgba(244,233,216,0.12); border-radius: 2px; }
+  .related-card {
+    flex: 0 0 260px; scroll-snap-align: start;
+    background: rgba(12,8,20,0.65); border: 1px solid rgba(244,233,216,0.07);
+    border-radius: 12px; overflow: hidden;
+    transition: border-color 0.25s var(--ease-out-expo), box-shadow 0.25s, transform 0.25s;
+  }
+  .related-card:hover {
+    border-color: rgba(232,93,4,0.22); box-shadow: 0 20px 48px rgba(0,0,0,0.45);
+    transform: translateY(-3px);
+  }
+  .related-card-media {
+    aspect-ratio: 1; overflow: hidden;
+    background: radial-gradient(ellipse 85% 75% at 50% 45%, rgba(232,93,4,0.22), rgba(107,45,138,0.12) 45%, var(--void) 100%);
+  }
+  .related-card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.45s var(--ease-out-expo); }
+  .related-card:hover .related-card-media img { transform: scale(1.05); }
+  .related-card-body { padding: 0.85rem; }
+  .related-card-title { font-weight: 600; font-size: 0.85rem; color: var(--bone); margin-bottom: 0.3rem; line-height: 1.3; }
+  .related-card-price { font-size: 0.82rem; color: var(--ember); font-weight: 600; }
+
+  /* ===== Footer ===== */
+  .site-footer {
+    text-align: center; padding: 2.5rem 1rem;
+    font-size: 0.75rem; color: var(--bone-muted);
+    border-top: 1px solid rgba(244,233,216,0.06);
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 900px) {
+    .product-detail { grid-template-columns: 1fr; gap: 2rem; }
+    .product-gallery { position: static; }
+    .nav-main { display: none; }
+    .header-inner { grid-template-columns: 1fr auto; }
+    .product-meta-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 500px) {
+    .product-meta-grid { grid-template-columns: 1fr 1fr; }
+    .thumbnail-btn { width: 56px; height: 56px; }
+    .quantity-row { flex-direction: column; align-items: flex-start; }
+  }
+
+  /* ===== Utility ===== */
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+</style>
+</head>
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo-link" href="#" aria-label="HallowCeramics home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      HallowCeramics
+    </a>
+    <nav class="nav-main" aria-label="Primary">
+      <a href="#">All Product</a>
+      <a href="#">Resources</a>
+      <a href="#">About us</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#" class="icon-btn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+          <path d="M6 8h15l-1.5 9H7.5L6 8zm0 0L5 3H2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="9" cy="20" r="1.5" fill="currentColor" stroke="none"/>
+          <circle cx="18" cy="20" r="1.5" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== PRODUCT DETAIL ==================== -->
+<main>
+  <div class="product-detail">
+
+    <!-- LEFT: Gallery -->
+    <div class="product-gallery">
+      <div class="main-image-wrap" id="mainImageWrap" onclick="openLightbox()" role="button" tabindex="0" aria-label="Enlarge product image">
+        <span class="main-image-badge">New</span>
+        <img id="mainImage" src="../images/product_render/1/ChatGPT Image 2026年4月27日 20_31_30.png" alt="Classic Rib Pumpkin — hand-carved ceramic" />
+      </div>
+      <div class="thumbnail-row">
+        <button class="thumbnail-btn active" onclick="switchImage(0)" aria-label="View image 1">
+          <img src="../images/product_render/1/ChatGPT Image 2026年4月27日 20_31_30.png" alt="" loading="lazy" />
+        </button>
+        <button class="thumbnail-btn" onclick="switchImage(1)" aria-label="View image 2">
+          <img src="../images/product_render/1/ChatGPT Image 2026年4月29日 13_45_21.png" alt="" loading="lazy" />
+        </button>
+      </div>
+    </div>
+
+    <!-- RIGHT: Info -->
+    <div class="product-info">
+      <span class="product-category">Pumpkins</span>
+
+      <h1 class="product-name">Classic Rib Pumpkin</h1>
+
+      <!-- Price -->
+      <div class="product-price-row">
+        <span class="product-price">$89</span>
+        <span class="product-price-was">$109</span>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- Short description -->
+      <p class="product-short-desc">
+        Hand-carved from stoneware ceramic, each rib and stem is shaped by hand for a silhouette that reads true in daylight. Fired for strength and glazed for depth — this isn't a plastic prop, it's a piece that earns the double take.
+      </p>
+
+      <!-- Meta badges -->
+      <div class="product-meta-grid">
+        <div class="product-meta-item">
+          <div class="product-meta-label">Material</div>
+          <div class="product-meta-value">Stoneware</div>
+        </div>
+        <div class="product-meta-item">
+          <div class="product-meta-label">Size</div>
+          <div class="product-meta-value">≈ 20 × 18 cm</div>
+        </div>
+        <div class="product-meta-item">
+          <div class="product-meta-label">Weight</div>
+          <div class="product-meta-value">1.5 kg</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- Quantity + Actions -->
+      <div class="quantity-row">
+        <span class="qty-label">Quantity</span>
+        <div class="quantity-selector">
+          <button class="qty-btn" onclick="changeQty(-1)" aria-label="Decrease quantity">−</button>
+          <input class="qty-input" type="number" id="qtyInput" value="1" min="1" max="25" readonly />
+          <button class="qty-btn" onclick="changeQty(1)" aria-label="Increase quantity">+</button>
+        </div>
+      </div>
+
+      <div class="product-actions">
+        <button class="btn-add-cart" onclick="alert('Added to cart!')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M6 8h15l-1.5 9H7.5L6 8zm0 0L5 3H2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="9" cy="20" r="1.5" fill="currentColor" stroke="none"/>
+            <circle cx="18" cy="20" r="1.5" fill="currentColor" stroke="none"/>
+          </svg>
+          Add to Cart
+        </button>
+        <button class="btn-buy-now">Buy it now</button>
+      </div>
+
+      <!-- Shipping note -->
+      <div class="shipping-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="1" y="3" width="15" height="13" rx="1"/>
+          <polyline points="16,8 20,8 23,11 23,16 16,16"/>
+          <circle cx="5.5" cy="18.5" r="1.5"/>
+          <circle cx="18.5" cy="18.5" r="1.5"/>
+        </svg>
+        Free shipping on orders over $120 · Hand-packed in 2–4 days
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TABS ===== -->
+  <div class="product-tabs-section">
+    <div class="product-tabs" role="tablist">
+      <button class="product-tab-btn active" role="tab" onclick="switchTab(0)" id="tab-btn-0" aria-selected="true">Details</button>
+      <button class="product-tab-btn" role="tab" onclick="switchTab(1)" id="tab-btn-1" aria-selected="false">Shipping</button>
+    </div>
+
+    <!-- Details panel -->
+    <div class="product-tab-panel active" role="tabpanel" id="tab-panel-0">
+      <div class="tab-body">
+        <h3>About this piece</h3>
+        <p>Our Classic Rib Pumpkin is the anchor piece of the HallowCeramics collection. Each one is hand-carved from stoneware clay — the ribs, the stem, the silhouette — before a slow dry, a strength-building bisque fire, and a final glaze that gives the surface a soft, believable depth.</p>
+        <p>Unlike factory-molded decor, these pumpkins vary slightly from piece to piece. That's intentional: the subtle asymmetry is what makes them read as real, not plastic.</p>
+
+        <h3>Specifications</h3>
+        <table class="spec-table">
+          <tr><td>Material</td><td>Stoneware ceramic</td></tr>
+          <tr><td>Finish</td><td>Semi-matte reactive glaze</td></tr>
+          <tr><td>Dimensions</td><td>Approx. 20 cm × 20 cm × 18 cm</td></tr>
+          <tr><td>Weight</td><td>1.5 kg</td></tr>
+          <tr><td>Care</td><td>Wipe clean with a dry or slightly damp cloth</td></tr>
+          <tr><td>Use</td><td>Indoor display only (not weather-sealed)</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Shipping panel -->
+    <div class="product-tab-panel" role="tabpanel" id="tab-panel-1">
+      <div class="tab-body">
+        <h3>Shipping</h3>
+        <p>Every pumpkin is packed by hand with custom foam inserts before it leaves our studio. Orders ship within 2–4 business days.</p>
+        <table class="spec-table">
+          <tr><td>Domestic (US)</td><td>$8 flat rate · Free over $120</td></tr>
+          <tr><td>Canada</td><td>$18 flat rate</td></tr>
+          <tr><td>International</td><td>Calculated at checkout</td></tr>
+        </table>
+
+        <h3>Returns</h3>
+        <p>If your piece arrives damaged or doesn't meet your expectations, you have 14 days from delivery to request a return. We'll send a prepaid label — no restocking fee. We want you to love the object, not settle for it.</p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- ===== Related Products ===== -->
+  <section class="related-section" aria-labelledby="related-title">
+    <h2 id="related-title">You may also like</h2>
+    <div class="related-scroll">
+      <article class="related-card">
+        <a href="#" class="related-card-media" aria-label="Mini Pumpkin Trio">
+          <img src="../images/product_render/1/ChatGPT Image 2026年4月29日 13_45_21.png" alt="" loading="lazy" />
+        </a>
+        <div class="related-card-body">
+          <h3 class="related-card-title">Mini Pumpkin Trio</h3>
+          <p class="related-card-price">$65</p>
+        </div>
+      </article>
+      <article class="related-card">
+        <a href="#" class="related-card-media" aria-label="Ghost Taper Holder">
+          <img src="../images/product_render/1/ChatGPT Image 2026年4月27日 20_31_30.png" alt="" loading="lazy" />
+        </a>
+        <div class="related-card-body">
+          <h3 class="related-card-title">Ghost Taper Holder</h3>
+          <p class="related-card-price">$52</p>
+        </div>
+      </article>
+      <article class="related-card">
+        <a href="#" class="related-card-media" aria-label="Ribbed Statement Pumpkin">
+          <img src="../images/product_render/1/ChatGPT Image 2026年4月29日 13_45_21.png" alt="" loading="lazy" />
+        </a>
+        <div class="related-card-body">
+          <h3 class="related-card-title">Ribbed Statement</h3>
+          <p class="related-card-price">$109</p>
+        </div>
+      </article>
+      <article class="related-card">
+        <a href="#" class="related-card-media" aria-label="Candle Trio Set">
+          <img src="../images/product_render/1/ChatGPT Image 2026年4月27日 20_31_30.png" alt="" loading="lazy" />
+        </a>
+        <div class="related-card-body">
+          <h3 class="related-card-title">Candle Trio Set</h3>
+          <p class="related-card-price">$48</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <p>&copy; HallowCeramics. All hallows reserved.</p>
+</footer>
+
+<!-- ==================== LIGHTBOX ==================== -->
+<div class="lightbox-overlay" id="lightbox" style="display:none" onclick="closeLightbox()" role="dialog" aria-modal="true" aria-label="Enlarged product image">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox">&times;</button>
+  <img id="lightboxImage" src="" alt="" />
+</div>
+
+<!-- ==================== SCRIPTS ==================== -->
+<script>
+  const images = [
+    "../images/product_render/1/ChatGPT Image 2026年4月27日 20_31_30.png",
+    "../images/product_render/1/ChatGPT Image 2026年4月29日 13_45_21.png"
+  ];
+  let currentIdx = 0;
+
+  function switchImage(idx) {
+    currentIdx = idx;
+    document.getElementById("mainImage").src = images[idx];
+    document.querySelectorAll(".thumbnail-btn").forEach((btn, i) => {
+      btn.classList.toggle("active", i === idx);
+    });
+  }
+
+  function changeQty(delta) {
+    const input = document.getElementById("qtyInput");
+    let val = parseInt(input.value) + delta;
+    if (val < 1) val = 1;
+    if (val > 25) val = 25;
+    input.value = val;
+  }
+
+  function openLightbox() {
+    document.getElementById("lightboxImage").src = images[currentIdx];
+    document.getElementById("lightbox").style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+    document.body.style.overflow = "";
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeLightbox();
+  });
+
+  function switchTab(idx) {
+    document.querySelectorAll(".product-tab-btn").forEach((btn, i) => {
+      btn.classList.toggle("active", i === idx);
+      btn.setAttribute("aria-selected", i === idx);
+    });
+    document.querySelectorAll(".product-tab-panel").forEach((panel, i) => {
+      panel.classList.toggle("active", i === idx);
+    });
+  }
+</script>
+
+</body>
+</html>
