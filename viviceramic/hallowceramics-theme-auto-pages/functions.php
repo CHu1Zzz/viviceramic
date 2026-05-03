@@ -7,7 +7,7 @@ if (! defined('ABSPATH')) {
     exit;
 }
 
-const HALLOW_AUTO_PAGES_VERSION = '1.3.0';
+const HALLOW_AUTO_PAGES_VERSION = '1.3.1';
 
 function hallow_asset_version(string $relative_path): string
 {
@@ -161,7 +161,7 @@ function hallow_setup_default_pages(): void
     }
 
     // Ensure WooCommerce pages exist (cart, checkout, my-account, shop)
-    if (function_exists('wc_create_page')) {
+    if (class_exists('WooCommerce')) {
         $wc_pages = [
             'cart'     => ['title' => 'Cart',     'content' => '[woocommerce_cart]'],
             'checkout' => ['title' => 'Checkout', 'content' => '[woocommerce_checkout]'],
