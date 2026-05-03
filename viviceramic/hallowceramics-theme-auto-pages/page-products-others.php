@@ -64,12 +64,12 @@ $others = wc_get_products([
         <div class="pl-grid">
         <?php foreach ( $others as $product ) : ?>
           <article class="pl-card">
-            <div class="pl-card-visual">
+            <a class="pl-card-visual" href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>">
               <?php if ( $product->is_on_sale() ) : ?>
                 <span class="pl-card-badge" data-i18n="catalogSale">Sale</span>
               <?php endif; ?>
               <?php echo $product->get_image( 'medium', ['loading' => 'lazy', 'decoding' => 'async'] ); ?>
-            </div>
+            </a>
             <div class="pl-card-body">
               <h3 class="pl-card-title"><?php echo esc_html( $product->get_name() ); ?></h3>
               <p class="pl-card-price"><?php echo $product->get_price_html(); ?></p>
