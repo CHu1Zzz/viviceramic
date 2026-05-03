@@ -347,14 +347,18 @@ img {
 }
 
 .logo-icon {
-  height: 36px;
-  width: auto;
+  height: 36px !important;
+  width: auto !important;
+  max-width: 72px;
+  flex-shrink: 0;
   object-fit: contain;
 }
 
 .logo-text {
-  height: 48px;
-  width: auto;
+  height: 48px !important;
+  width: auto !important;
+  max-width: 300px;
+  flex-shrink: 0;
   object-fit: contain;
   margin-left: 1px;
 }
