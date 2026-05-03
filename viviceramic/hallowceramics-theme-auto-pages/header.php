@@ -32,6 +32,9 @@
               <circle cx="9" cy="20" r="1.5" fill="currentColor" stroke="none" />
               <circle cx="18" cy="20" r="1.5" fill="currentColor" stroke="none" />
             </svg>
+            <?php if ( function_exists('WC') && WC()->cart && WC()->cart->get_cart_contents_count() > 0 ) : ?>
+              <span class="cart-badge"><?php echo esc_html( WC()->cart->get_cart_contents_count() ); ?></span>
+            <?php endif; ?>
           </a>
           <a href="<?php echo esc_url(hallow_account_url()); ?>" class="icon-btn" aria-label="Account">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
