@@ -7,7 +7,7 @@ if (! defined('ABSPATH')) {
     exit;
 }
 
-const HALLOW_AUTO_PAGES_VERSION = '1.3.2';
+const HALLOW_AUTO_PAGES_VERSION = '1.4.0';
 
 function hallow_asset_version(string $relative_path): string
 {

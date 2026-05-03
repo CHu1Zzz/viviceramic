@@ -33,21 +33,7 @@ if ( ! empty( $cross_sell_ids ) ) {
       <p class="cart-item-count" id="cartItemCount"><?php echo esc_html( sprintf( _n( '%s item', '%s items', $item_count, 'hallowceramics-auto-pages-no-router' ), number_format_i18n( $item_count ) ) ); ?></p>
     </div>
 
-    <?php if ( empty( $cart_items ) ) : ?>
-      <!-- Empty cart state -->
-      <div class="cart-empty">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
-          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-        </svg>
-        <h2><?php esc_html_e( 'Your cart is empty', 'hallowceramics-auto-pages-no-router' ); ?></h2>
-        <p><?php esc_html_e( 'Looks like you haven’t added anything yet. Browse our hand-fired ceramics and find your perfect piece.', 'hallowceramics-auto-pages-no-router' ); ?></p>
-        <a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ?: home_url( '/shop/' ) ); ?>" class="back-shop-btn">
-          <?php esc_html_e( 'Browse Products', 'hallowceramics-auto-pages-no-router' ); ?>
-        </a>
-      </div>
-
-    <?php else : ?>
+    <?php if ( ! empty( $cart_items ) ) : ?>
       <form class="cart-layout" id="cartLayout" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
         <?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
 
