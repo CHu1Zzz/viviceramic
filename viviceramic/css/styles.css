@@ -3463,7 +3463,7 @@ img {
 .product-detail {
   max-width: 1340px;
   margin: 0 auto;
-  padding: 2rem clamp(1rem, 3vw, 2.5rem) 4rem;
+  padding: 6rem clamp(1rem, 3vw, 2.5rem) 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: clamp(2rem, 5vw, 4rem);
