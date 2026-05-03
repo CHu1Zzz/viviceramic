@@ -1,7 +1,8 @@
 <?php
 /**
- * WooCommerce Single Product template override.
- * HallowCeramics custom design — dark theme, split layout, custom tabs.
+ * WooCommerce Single Product content template — HallowCeramics.
+ * Loaded by woocommerce_content() via wc_get_template_part('content','single-product').
+ * Dark-theme split layout, custom tabs, related products.
  *
  * @package HallowCeramics
  */
@@ -298,4 +299,3 @@ foreach ( $related_ids as $rid ) {
   window.__hallowProductImages = <?php echo wp_json_encode( $all_image_urls ); ?>;
   window.__hallowProductMaxQty = <?php echo (int) $max_qty; ?>;
 </script>
-
