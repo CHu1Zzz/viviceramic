@@ -7,7 +7,7 @@ if (! defined('ABSPATH')) {
     exit;
 }
 
-const HALLOW_AUTO_PAGES_VERSION = '1.3.1';
+const HALLOW_AUTO_PAGES_VERSION = '1.3.2';
 
 function hallow_asset_version(string $relative_path): string
 {
@@ -160,28 +160,54 @@ function hallow_setup_default_pages(): void
         update_option('page_for_posts', $blog_id);
     }
 
-    // Ensure WooCommerce pages exist (cart, checkout, my-account, shop)
+    // Ensure WooCommerce pages exist and are correctly mapped.
+    // Critical: if a page with the right slug already exists but woocommerce_*_page_id
+    // is 0 or wrong, is_cart()/is_checkout()/is_account_page() all return false,
+    // woocommerce.php never loads, and the user sees "Page not configured".
     if (class_exists('WooCommerce')) {
         $wc_pages = [
-            'cart'     => ['title' => 'Cart',     'content' => '[woocommerce_cart]'],
-            'checkout' => ['title' => 'Checkout', 'content' => '[woocommerce_checkout]'],
-            'myaccount'=> ['title' => 'My account','content' => '[woocommerce_my_account]'],
+            'cart'      => ['title' => 'Cart',      'content' => '<!-- wp:shortcode -->[woocommerce_cart]<!-- /wp:shortcode -->'],
+            'checkout'  => ['title' => 'Checkout',  'content' => '<!-- wp:shortcode -->[woocommerce_checkout]<!-- /wp:shortcode -->'],
+            'myaccount' => ['title' => 'My account', 'content' => '<!-- wp:shortcode -->[woocommerce_my_account]<!-- /wp:shortcode -->'],
         ];
         foreach ($wc_pages as $slug => $data) {
-            $existing_id = get_option('woocommerce_' . $slug . '_page_id');
-            if (! $existing_id || ! get_post($existing_id)) {
-                $page_id = wp_insert_post([
-                    'post_title'     => $data['title'],
-                    'post_name'      => $slug,
-                    'post_content'   => $data['content'],
-                    'post_type'      => 'page',
-                    'post_status'    => 'publish',
-                    'comment_status' => 'closed',
-                    'ping_status'    => 'closed',
-                ]);
-                if ($page_id && ! is_wp_error($page_id)) {
-                    update_option('woocommerce_' . $slug . '_page_id', $page_id);
+            $option_key = 'woocommerce_' . $slug . '_page_id';
+            $stored_id  = (int) get_option($option_key);
+            $page       = $stored_id ? get_post($stored_id) : null;
+
+            // 1. If the stored option points to a valid published page, keep it.
+            if ($page && $page->post_status === 'publish') {
+                continue;
+            }
+
+            // 2. Look for an existing page with the canonical slug.
+            $by_slug = get_page_by_path($slug);
+            if ($by_slug && $by_slug->post_status === 'publish') {
+                update_option($option_key, $by_slug->ID);
+                // Ensure the shortcode is present (non-destructive update).
+                if (strpos($by_slug->post_content, '[woocommerce_' . $slug) === false) {
+                    wp_update_post([
+                        'ID'           => $by_slug->ID,
+                        'post_content' => $data['content'],
+                    ]);
                 }
+                continue;
+            }
+
+            // 3. No valid page exists — create one with the canonical slug.
+            //    wp_insert_post will deduplicate slugs automatically, but since we
+            //    already checked get_page_by_path this should be a clean insert.
+            $page_id = wp_insert_post([
+                'post_title'     => $data['title'],
+                'post_name'      => $slug,
+                'post_content'   => $data['content'],
+                'post_type'      => 'page',
+                'post_status'    => 'publish',
+                'comment_status' => 'closed',
+                'ping_status'    => 'closed',
+            ]);
+            if ($page_id && ! is_wp_error($page_id)) {
+                update_option($option_key, $page_id);
             }
         }
     }
