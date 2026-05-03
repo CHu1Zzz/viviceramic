@@ -8,7 +8,7 @@
 
 defined('ABSPATH') || exit;
 
-global $product, $hallow_body_class, $hallow_body_attrs;
+global $product;
 
 if ( ! is_a( $product, 'WC_Product' ) ) {
     $product = wc_get_product( get_the_ID() );
@@ -17,9 +17,6 @@ if ( ! $product ) {
     return;
 }
 
-$hallow_body_class = 'woocommerce single-product hallow-single-product';
-$hallow_body_attrs = '';
-get_header();
 
 // ---- Product data ----
 $product_id       = $product->get_id();
@@ -302,4 +299,3 @@ foreach ( $related_ids as $rid ) {
   window.__hallowProductMaxQty = <?php echo (int) $max_qty; ?>;
 </script>
 
-<?php get_footer(); ?>
