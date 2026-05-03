@@ -160,6 +160,32 @@ function hallow_setup_default_pages(): void
         update_option('page_for_posts', $blog_id);
     }
 
+    // Ensure WooCommerce pages exist (cart, checkout, my-account, shop)
+    if (function_exists('wc_create_page')) {
+        $wc_pages = [
+            'cart'     => ['title' => 'Cart',     'content' => '[woocommerce_cart]'],
+            'checkout' => ['title' => 'Checkout', 'content' => '[woocommerce_checkout]'],
+            'myaccount'=> ['title' => 'My account','content' => '[woocommerce_my_account]'],
+        ];
+        foreach ($wc_pages as $slug => $data) {
+            $existing_id = get_option('woocommerce_' . $slug . '_page_id');
+            if (! $existing_id || ! get_post($existing_id)) {
+                $page_id = wp_insert_post([
+                    'post_title'     => $data['title'],
+                    'post_name'      => $slug,
+                    'post_content'   => $data['content'],
+                    'post_type'      => 'page',
+                    'post_status'    => 'publish',
+                    'comment_status' => 'closed',
+                    'ping_status'    => 'closed',
+                ]);
+                if ($page_id && ! is_wp_error($page_id)) {
+                    update_option('woocommerce_' . $slug . '_page_id', $page_id);
+                }
+            }
+        }
+    }
+
     // Create WooCommerce product categories if they don't exist
     if (taxonomy_exists('product_cat')) {
         $categories = ['pumpkins' => 'Pumpkins', 'others' => 'Others'];
