@@ -23,6 +23,7 @@ if ( ! empty( $cross_sell_ids ) ) {
         'limit'   => 4,
     ] );
 }
+
 ?>
 
 <div class="cart-content">
@@ -238,3 +239,4 @@ if ( ! empty( $cross_sell_ids ) ) {
 })();
 </script>
 <?php endif; ?>
+
