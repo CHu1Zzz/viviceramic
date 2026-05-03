@@ -4030,6 +4030,14 @@ img {
   padding: 0 var(--nav-pad);
 }
 
+/* WooCommerce pages: remove .page-main constraints so cart/checkout fill full width */
+.woocommerce-cart .page-main,
+.woocommerce-checkout .page-main,
+.woocommerce-account .page-main {
+  max-width: none;
+  padding: 0;
+}
+
 .cart-page {
   padding: 6rem 0 4rem;
   animation: fade-up 0.7s var(--ease-out-expo);
