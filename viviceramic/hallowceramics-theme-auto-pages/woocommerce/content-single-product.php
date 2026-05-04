@@ -298,4 +298,50 @@ foreach ( $related_ids as $rid ) {
 <script>
   window.__hallowProductImages = <?php echo wp_json_encode( $all_image_urls ); ?>;
   window.__hallowProductMaxQty = <?php echo (int) $max_qty; ?>;
+  window.__hallowProductId = <?php echo (int) $product_id; ?>;
+  window.__ajaxUrl = <?php echo wp_json_encode( admin_url('admin-ajax.php')); ?>;
+  window.__addToCartNonce = <?php echo wp_json_encode( wp_create_nonce('hallow_add_to_cart_nonce')); ?>;
 </script>
+
+<style>
+/* === AJAX Toast Notification === */
+.hallow-toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(120%);
+  background: #120a1a;
+  border: 1px solid #7cb518;
+  border-radius: 12px;
+  padding: 0.875rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 0.9rem;
+  color: #f4e9d8;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 9999;
+  max-width: calc(100vw - 2rem);
+}
+.hallow-toast.is-visible {
+  transform: translateX(-50%) translateY(0);
+}
+.hallow-toast .toast-icon {
+  width: 20px;
+  height: 20px;
+  color: #7cb518;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hallow-toast .toast-message { white-space: nowrap; }
+.hallow-toast.is-error {
+  border-color: #e85d04;
+}
+.hallow-toast.is-error .toast-icon { color: #e85d04; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.spin { animation: spin 0.8s linear infinite; }
+</style>

@@ -4806,3 +4806,44 @@ img {
     height: 80px;
   }
 }
+
+/* === AJAX Toast Notification === */
+.hallow-toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(120%);
+  background: var(--ink);
+  border: 1px solid var(--toxic);
+  border-radius: 12px;
+  padding: 0.875rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--bone);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  transition: transform 0.4s var(--ease-out-expo);
+  z-index: 9999;
+  max-width: calc(100vw - 2rem);
+  pointer-events: none;
+}
+.hallow-toast.is-visible {
+  transform: translateX(-50%) translateY(0);
+}
+.hallow-toast.is-error {
+  border-color: var(--ember);
+}
+.hallow-toast .toast-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--toxic);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hallow-toast.is-error .toast-icon { color: var(--ember); }
+@keyframes spin { to { transform: rotate(360deg); } }
+.spin { animation: spin 0.8s linear infinite; }
