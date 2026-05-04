@@ -31,6 +31,16 @@ __pycache__/
 *.pyd
 .venv/
 venv/
+*.py
+
+# Excel / CSV data files (product imports)
+*.xlsx
+*.xls
+*.csv
+
+# Reference HTML files (not part of the theme)
+empty-cart-reference.html
+woocommerce-product-csv-template-filled-corrected.csv
 
 # macOS
 __MACOSX/
